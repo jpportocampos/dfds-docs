@@ -1,0 +1,41 @@
+site_name: Regras de Criação de DFDS
+site_description: Catálogo de propriedades para avaliação e criação de documentações de ferramentas de desenvolvimento de software
+site_author: João Pedro Porto Campos
+
+theme:
+  name: material
+  language: pt
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+
+nav:
+  - Início: index.md
+  - Introdução: introducao.md
+  - Propriedades:
+      - "1. Descrição dos Conceitos": propriedades/propriedade-1-conceitos.md
+      - "2. Cobertura Funcional": propriedades/propriedade-2-cobertura-funcional.md
+      - "3. Exemplos e Código": propriedades/propriedade-3-exemplos-codigo.md
+      - "4. Estrutura Modular": propriedades/propriedade-4-estrutura-modular.md
+      - "5. Estrutura Linear": propriedades/propriedade-5-estrutura-linear.md
+      - "6. Referências em Código": propriedades/propriedade-6-referencias-comentarios.md
+      - "7. Destaques Visuais": propriedades/propriedade-7-destaques-visuais.md
+      - "8. Ajudas Visuais": propriedades/propriedade-8-ajudas-visuais.md
+      - "9. Referências e Links Internos": propriedades/propriedade-9-referencias-links-internos.md
+      - "10. Referências e Links Externos": propriedades/propriedade-10-referencias-links-externos.md
+      - "11. Integraçãod de Ferramentas de Busca": propriedades/propriedade-11-integracao-ferramentas-busca.md
+      - "12. Versionamento": propriedades/propriedade-12-versionamento.md
+      - "13. Atualização": propriedades/propriedade-13-atualizacao.mdss
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
