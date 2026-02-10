@@ -1,0 +1,1190 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Catálogo de propriedades para avaliação e criação de documentações de ferramentas de desenvolvimento de software">
+      
+      
+        <meta name="author" content="João Pedro Porto Campos">
+      
+      
+      
+        <link rel="prev" href="../propriedade-8-ajudas-visuais/">
+      
+      
+        <link rel="next" href="../propriedade-10-referencias-links-externos/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>9. Referências e Links Internos - Regras de Criação de DFDS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#9-propriedade-referencias-e-links-internos" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Regras de Criação de DFDS" class="md-header__button md-logo" aria-label="Regras de Criação de DFDS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Regras de Criação de DFDS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              9. Referências e Links Internos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Regras de Criação de DFDS" class="md-nav__button md-logo" aria-label="Regras de Criação de DFDS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Regras de Criação de DFDS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introducao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introdução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propriedades
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Propriedades
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../propriedade-1-conceitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Descrição dos Conceitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../propriedade-2-cobertura-funcional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Cobertura Funcional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../propriedade-3-exemplos-codigo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Exemplos e Código
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../propriedade-4-estrutura-modular/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Estrutura Modular
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../propriedade-5-estrutura-linear/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Estrutura Linear
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../propriedade-6-referencias-comentarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Referências em Código
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../propriedade-7-destaques-visuais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Destaques Visuais
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../propriedade-8-ajudas-visuais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Ajudas Visuais
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Referências e Links Internos
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Referências e Links Internos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pre-condicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pré-Condições
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atributos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atributos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Atributos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atributos-de-conteudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atributos de Conteúdo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Atributos de Conteúdo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-completude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 Completude
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-corretude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 Corretude
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-relevancia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 Relevância
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94-contextualizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 Contextualização
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atributos-de-apresentacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atributos de Apresentação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Atributos de Apresentação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#95-boa-legibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5 Boa legibilidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#96-clareza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.6 Clareza
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#97-estrutura-organizada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.7 Estrutura organizada
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../propriedade-10-referencias-links-externos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Referências e Links Externos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../propriedade-11-integracao-ferramentas-busca/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Integraçãod de Ferramentas de Busca
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../propriedade-12-versionamento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Versionamento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../propriedade-13-atualizacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. Atualização
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pre-condicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pré-Condições
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atributos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atributos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Atributos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atributos-de-conteudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atributos de Conteúdo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Atributos de Conteúdo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-completude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 Completude
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-corretude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 Corretude
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-relevancia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 Relevância
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94-contextualizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 Contextualização
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atributos-de-apresentacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atributos de Apresentação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Atributos de Apresentação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#95-boa-legibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5 Boa legibilidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#96-clareza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.6 Clareza
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#97-estrutura-organizada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.7 Estrutura organizada
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="9-propriedade-referencias-e-links-internos">9- Propriedade: Referências e links internos<a class="headerlink" href="#9-propriedade-referencias-e-links-internos" title="Permanent link">&para;</a></h1>
+<p>Propriedade de conteúdo. Utilização de links internos para facilitar navegação. Links internos conectam seções com conceitos ou funcionalidades em comum.</p>
+<h2 id="pre-condicoes">Pré-Condições<a class="headerlink" href="#pre-condicoes" title="Permanent link">&para;</a></h2>
+<p>Essa propriedade só é aplicável quando se tem seções que possuam conceitos ou funcionalidades em comum</p>
+<h2 id="atributos">Atributos<a class="headerlink" href="#atributos" title="Permanent link">&para;</a></h2>
+<h3 id="atributos-de-conteudo">Atributos de Conteúdo<a class="headerlink" href="#atributos-de-conteudo" title="Permanent link">&para;</a></h3>
+<h4 id="91-completude">9.1 Completude<a class="headerlink" href="#91-completude" title="Permanent link">&para;</a></h4>
+<p>As referências e links internos são considerados completos quando todas as seções que possuem conceitos ou funcionalidades em comum possuem links internos entre si.</p>
+<p><strong>Consequências:</strong><br />
+Quando as referências e links internos não estão completos, há a necessidade de encontrar conteúdos de diferentes seções manualmente devido à falta de links.</p>
+<p><strong>Exemplo de boa aplicação:</strong><br />
+Na documentação da ferramenta PIL as funcionalidades e conceitos mencionados em outras seções possuem links para as respectivas páginas:</p>
+<p><img alt="Screenshot" src="../../imagens/img%20%2879%29.png" /></p>
+<p><strong>Exemplo de aplicação ruim:</strong><br />
+Na documentação da ferramenta Axios as funcionalidades mencionadas, apesar de estarem com formatação diferente, não possuem links para suas respectivas definições:</p>
+<p><img alt="Screenshot" src="../../imagens/img%20%2880%29.png" /></p>
+<p><strong>Verificação:</strong><br />
+Todas as seções na DFDS que possuem conceitos ou funcionalidades em comum possuem links internos entre si.</p>
+<hr />
+<h4 id="92-corretude">9.2 Corretude<a class="headerlink" href="#92-corretude" title="Permanent link">&para;</a></h4>
+<p>As referências e links internos são considerados corretos quando os links internos levam para as seções corretas.</p>
+<p><strong>Consequências:</strong><br />
+Quando as referências e links internos não estão corretos, há necessidade de encontrar conteúdos de diferentes seções manualmente devido à presença de links que direcionam para o trecho errado da DFDS.</p>
+<p><strong>Exemplo de boa aplicação:</strong><br />
+Na documentação da ferramenta PIL ao selecionar o link em “See Colors” na primeira imagem, somos direcionados para a seção correspondente no módulo de “Concepts”, na segunda imagem:</p>
+<p><img alt="Screenshot" src="../../imagens/img%20%2880%29.png" /></p>
+<p><img alt="Screenshot" src="../../imagens/img%20%2881%29.png" /></p>
+<p><strong>Exemplo de aplicação ruim:</strong><br />
+As documentações de exemplo não possuem exemplos de links internos incorretos. Usando o exemplo anterior, se ao clicarmos em “See Colors” fossemos direcionados para a seção “Color names”, seria uma incorreção:</p>
+<p><img alt="Screenshot" src="../../imagens/img%20%2880%29.png" /></p>
+<p><img alt="Screenshot" src="../../imagens/img%20%2882%29.png" /></p>
+<p><strong>Verificação:</strong><br />
+Todos os links internos levam para as seções correspondentes à referência feita.</p>
+<hr />
+<h4 id="93-relevancia">9.3 Relevância<a class="headerlink" href="#93-relevancia" title="Permanent link">&para;</a></h4>
+<p>A Relevância não afeta essa propriedade</p>
+<hr />
+<h4 id="94-contextualizacao">9.4 Contextualização<a class="headerlink" href="#94-contextualizacao" title="Permanent link">&para;</a></h4>
+<p>As referências e links internos são considerados contextualizados quando fica claro para qual seção o link interno direciona e qual o conceito ou funcionalidade em comum entre as seções.</p>
+<p><strong>Consequências:</strong><br />
+Quando as referências e links internos não estão contextualizados, há necessidade de verificar se o conteúdo referenciado é o que se espera ao clicar no link devido aos links serem ambíguos sobre o conteúdo que eles referenciam.</p>
+<p><strong>Exemplo de boa aplicação:</strong><br />
+Na documentação da ferramenta PIL os links internos são localizados no trecho com o nome da seção correspondente, deixando claro para qual seção será feito o redirecionamento.</p>
+<p><strong>Exemplo de aplicação ruim:</strong><br />
+As documentações de exemplo não possuem exemplos de falta de contextualização em links internos. Usando a documentação da ferramenta PIL como exemplo, uma possível falta de contextualização seria usar “here” ao invés do nome das seções no trecho com link:</p>
+<p><img alt="Screenshot" src="../../imagens/img%20%2885%29.png" /></p>
+<p><strong>Verificação:</strong><br />
+Todas as referências e links internos explicitam para quais conteúdos as referências são, assim como para qual seção o link direciona.</p>
+<hr />
+<h3 id="atributos-de-apresentacao">Atributos de Apresentação<a class="headerlink" href="#atributos-de-apresentacao" title="Permanent link">&para;</a></h3>
+<h4 id="95-boa-legibilidade">9.5 Boa legibilidade<a class="headerlink" href="#95-boa-legibilidade" title="Permanent link">&para;</a></h4>
+<p>As referências e links internos da ferramenta são considerados com boa legibilidade quando o texto que possui o link interno está bem escrito (fácil de entender) e não possui erros gramaticais.</p>
+<p><strong>Consequências:</strong><br />
+Quando as referências e links internos não estão com boa legibilidade, há dificuldade no entendimento sobre a relação entre as seções linkadas devido a dificuldade de leitura dos links.</p>
+<p><strong>Exemplo de boa aplicação:</strong><br />
+Na documentação da ferramenta PIL os links internos não apresentam erros gramaticais e estão bem escritos.</p>
+<p><strong>Exemplo de aplicação ruim:</strong><br />
+As documentações de exemplo não apresentam casos de legibilidade ruim nos links internos. Usando a documentação da ferramenta PIL como exemplo, um caso de legibilidade ruim poderia ser:</p>
+<p><img alt="Screenshot" src="../../imagens/img%20%2886%29.png" /></p>
+<p><strong>Verificação:</strong><br />
+O texto dos trechos das referências e links internos é bem escrito e não apresenta erros gramaticais.</p>
+<hr />
+<h4 id="96-clareza">9.6 Clareza<a class="headerlink" href="#96-clareza" title="Permanent link">&para;</a></h4>
+<p>As referências e links internos são considerados claros quando fica explícito que o texto apresentado é uma referência com link interno.</p>
+<p><strong>Consequências:</strong><br />
+Quando as referências e links internos não estão claros, a navegação é prejudicada devido à dificuldade de identificar que há um link interno presente no texto.</p>
+<p><strong>Exemplo de boa aplicação:</strong><br />
+Na documentação da ferramenta PIL os links internos estão com formatação de link, deixando explícito que os textos servem como âncoras para o conteúdo referenciado.</p>
+<p><strong>Exemplo de aplicação ruim:</strong><br />
+As documentações de exemplo não apresentam casos de falta de clareza nos links internos. Um exemplo de falta de clareza na documentação da ferramenta PIL poderia ser:</p>
+<p><img alt="Screenshot" src="../../imagens/img%20%2887%29.png" /></p>
+<p><strong>Verificação:</strong><br />
+Todas as referências e links internos possuem formatação de link.</p>
+<hr />
+<h4 id="97-estrutura-organizada">9.7 Estrutura organizada<a class="headerlink" href="#97-estrutura-organizada" title="Permanent link">&para;</a></h4>
+<p>As referências e links são considerados organizados estruturalmente quando a formatação de link utilizada é a mesma para todos os links de mesmo tipo de conteúdo.</p>
+<p><strong>Consequências:</strong><br />
+Quando as referências e links não estão organizados estruturalmente, a navegação é prejudicada devido à dificuldade de identificar os links presentes no texto.</p>
+<p><strong>Exemplo de boa aplicação:</strong><br />
+Na documentação da ferramenta PIL os links utilizados para referências conceituais são os mesmos em toda a documentação, assim como os links utilizados para referências de funcionalidades.</p>
+<p><strong>Exemplo de aplicação ruim:</strong><br />
+As documentações de exemplo não apresentam casos de links internos em uma estrutura ruim. Um exemplo utilizando a documentação da ferramenta PIL seria caso a formatação para links de referências conceituais fosse diferente para conceitos diferentes:</p>
+<p><img alt="Screenshot" src="../../imagens/img%20%2888%29.png" /></p>
+<p><strong>Verificação:</strong><br />
+Todas as referências e links internos para conteúdos de mesmo tipo estão estruturadas no mesmo formato.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.expand", "navigation.top", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
