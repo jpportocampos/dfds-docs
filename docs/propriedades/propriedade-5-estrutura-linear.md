@@ -1,124 +1,84 @@
-# Propriedade 5: Estrutura linear
+# 5- Propriedade: Estrutura linear
 
-Propriedade de apresentação. A DFDS deve apresentar seu conteúdo organizado de forma linear, permitindo que o leitor compreenda a documentação seguindo uma ordem lógica de leitura. [Arya et al. 2024, Treude et al. 2020, van Loggem 2013]
+Propriedade de apresentação e estrutura. O conteúdo é descrito em uma ordem de leitura específica, organizada em tópicos ordenados.
 
 ## Pré-Condições
-Essa propriedade só é aplicável quando a DFDS apresenta conteúdos que possuem uma ordem lógica de entendimento.
+Essa propriedade só é aplicável quando o conteúdo a ser documentado pode ser organizado em uma ordem de leitura específica.
+
+## OBSERVAÇÃO
+Essa propriedade facilita o uso da documentação por desenvolvedores que buscam aprender a ferramenta como um todo. O recomendado é combinar essa propriedade com a 4 (Estrutura modular), organizando as seções modulares em uma ordem específica de leitura.
 
 ## Atributos
 
 ### Atributos de Conteúdo
 
-#### 5.1 Sequencialidade
-A estrutura linear da DFDS é considerada adequada quando os conteúdos são apresentados em uma sequência lógica, na qual conceitos e funcionalidades são introduzidos de forma progressiva.
+#### 5.1 Completude
+A estrutura linear da DFDS é considerada completa quando todas as seções da DFDS estão ordenadas. Ou seja, as seções são descritas em uma ordem específica e descrevem, em conjunto, a ferramenta.
 
 **Consequências:**  
-Quando a estrutura linear não é adequada, há dificuldade para compreender a documentação devido à apresentação desordenada das informações.
+Ver Consequências em 4.1
 
 **Exemplo de boa aplicação:**  
-Em [1], a documentação inicia com conceitos básicos e avança gradualmente para funcionalidades mais complexas.
-
-**Imagem presente no PDF. Inserir aqui.**
+Na documentação da ferramenta Axios, as seções possuem uma ordem de leitura bem definida.
 
 **Exemplo de aplicação ruim:**  
-Apresentação de funcionalidades avançadas antes da explicação dos conceitos necessários.
+Na documentação da ferramenta PIL, as seções não possuem ordem de leitura definida.
 
 **Verificação:**  
-Os conteúdos da DFDS seguem uma ordem lógica de apresentação.
+As seções da DFDS são apresentadas em uma ordem específica e coerente com o conteúdo.
 
 ---
 
-#### 5.2 Dependência explícita
-A estrutura linear é considerada adequada quando as dependências entre conteúdos são explicitadas.
+#### 5.2 Corretude
+A estrutura linear da DFDS é considerada correta quando as seções são organizadas em tópicos ordenados. As seções ordenadas não precisam descrever completamente o tópico relacionado a elas, contanto que entre as seções, o tópico seja inteiramente descrito.
 
 **Consequências:**  
-Quando as dependências não são explicitadas, o leitor pode não compreender a relação entre diferentes partes da documentação.
+Ver consequências em 4.2
 
 **Exemplo de boa aplicação:**  
-Em [1], é indicado quais seções devem ser lidas antes de outras.
-
-**Imagem presente no PDF. Inserir aqui.**
+Na documentação da ferramenta Axios, as seções estão organizadas em tópicos de acordo com uma ordem pré definida de tópicos.
 
 **Exemplo de aplicação ruim:**  
-Referência a conceitos ou funcionalidades não explicadas previamente sem indicação.
+Na documentação da ferramenta Matplotlib, as seções não estão ordenadas e os tópicos estão espalhados sem uma organização pré definida.
 
 **Verificação:**  
-As dependências entre conteúdos são claramente indicadas.
+Nenhum conteúdo da DFDS é explicado da mesma forma em diferentes seções e as seções estão organizadas de acordo com uma ordem pré definida dos tópicos.
 
 ---
 
-#### 5.3 Coerência
-A estrutura linear é considerada coerente quando não há saltos abruptos de assunto ao longo da documentação.
+#### 5.3 Relevância
+A estrutura linear da ferramenta é considerada relevante quando as seções da DFDS são ordenadas de forma a facilitar o entendimento do uso real da ferramenta. Ou seja, as seções são ordenadas de acordo com os cenários reais de uso da ferramenta.
 
 **Consequências:**  
-Quando não há coerência, o leitor pode se perder durante a leitura da DFDS.
+Ver consequências em 4.3
 
 **Exemplo de boa aplicação:**  
-Em [1], cada seção está logicamente conectada à anterior.
-
-**Imagem presente no PDF. Inserir aqui.**
+Na documentação da ferramenta Axios, as seções estão ordenadas por complexidade de conteúdo.
 
 **Exemplo de aplicação ruim:**  
-Mudanças bruscas de assunto sem transição ou explicação.
+As documentações de exemplo não possuem exemplo de falta de relevância ou não possuem suas seções ordenadas. Usando a documentação da ferramenta Axios como exemplo, caso as seções fossem ordenadas em ordem alfabética, haveria falta de relevância.
 
 **Verificação:**  
-O fluxo de leitura da DFDS é contínuo e coerente.
+As seções da DFDS foram ordenadas de acordo com cenários reais de uso da ferramenta.
+
+---
+
+#### 5.4 Contextualização
+Verificar 4.4.
 
 ---
 
 ### Atributos de Apresentação
 
-#### 5.4 Boa legibilidade
-A estrutura linear é considerada legível quando o texto é claro e facilita o acompanhamento da sequência apresentada.
-
-**Consequências:**  
-Quando a estrutura linear não possui boa legibilidade, há dificuldade para acompanhar o fluxo de leitura.
-
-**Exemplo de boa aplicação:**  
-Em [1], o texto apresenta conectores que auxiliam na leitura sequencial.
-
-**Imagem presente no PDF. Inserir aqui.**
-
-**Exemplo de aplicação ruim:**  
-Texto fragmentado sem ligação entre parágrafos.
-
-**Verificação:**  
-O texto facilita a leitura sequencial da documentação.
+#### 5.5 Boa legibilidade
+Verificar 4.5
 
 ---
 
-#### 5.5 Clareza
-A estrutura linear é considerada clara quando o leitor consegue identificar facilmente a progressão do conteúdo.
-
-**Consequências:**  
-Quando a estrutura linear não está clara, há confusão sobre a ordem de leitura da DFDS.
-
-**Exemplo de boa aplicação:**  
-Em [1], a documentação utiliza títulos numerados ou progressivos.
-
-**Imagem presente no PDF. Inserir aqui.**
-
-**Exemplo de aplicação ruim:**  
-Ausência de indicação da progressão entre seções.
-
-**Verificação:**  
-A progressão do conteúdo está claramente indicada.
+#### 5.6 Clareza
+Verificar 4.6
 
 ---
 
-#### 5.6 Estrutura organizada
-A DFDS possui uma estrutura linear organizada quando a progressão do conteúdo é mantida de forma consistente em todo o documento.
-
-**Consequências:**  
-Quando não há organização linear, o leitor precisa reorganizar mentalmente a ordem das informações.
-
-**Exemplo de boa aplicação:**  
-Em [1], a ordem lógica é mantida do início ao fim da documentação.
-
-**Imagem presente no PDF. Inserir aqui.**
-
-**Exemplo de aplicação ruim:**  
-Repetição de conteúdos ou retorno a tópicos já tratados sem justificativa.
-
-**Verificação:**  
-A ordem lógica de apresentação é mantida em toda a DFDS.
+#### 5.7 Estrutura organizada
+Verificar 4.7

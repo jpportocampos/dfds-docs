@@ -29,7 +29,7 @@ nav:
       - "10. Referências e Links Externos": propriedades/propriedade-10-referencias-links-externos.md
       - "11. Integraçãod de Ferramentas de Busca": propriedades/propriedade-11-integracao-ferramentas-busca.md
       - "12. Versionamento": propriedades/propriedade-12-versionamento.md
-      - "13. Atualização": propriedades/propriedade-13-atualizacao.mdss
+      - "13. Atualização": propriedades/propriedade-13-atualizacao.md
 
 plugins:
   - search

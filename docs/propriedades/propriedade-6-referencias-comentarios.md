@@ -1,143 +1,125 @@
-# Propriedade 6: Referências conceituais em comentários de código
+# 6- Propriedade: Referências conceituais em comentários de código
 
-Propriedade de apresentação. A DFDS deve apresentar referências conceituais por meio de comentários em trechos de código, auxiliando o entendimento do funcionamento da ferramenta. [Arya et al. 2024, Treude et al. 2020, van Loggem 2013]
+Propriedade de apresentação e estrutura. Os conceitos modelados pela ferramenta são referenciados nos exemplos de código através de comentários de código.
 
 ## Pré-Condições
-Essa propriedade só é aplicável quando a DFDS apresenta exemplos ou fragmentos de código.
+Essa propriedade só é aplicável quando já existe uma explicação conceitual (Regra 1) e um exemplo de código (Regra 3) da funcionalidade que usa o conceito documentado.
 
 ## Atributos
 
 ### Atributos de Conteúdo
 
-#### 6.1 Presença de referências conceituais
-A referência conceitual em comentários de código é considerada adequada quando os comentários fazem referência direta a conceitos descritos anteriormente na DFDS.
+#### 6.1 Completude
+As referências conceituais em comentários de código são consideradas completas quando todos os conceitos de um exemplo de código da DFDS possuem comentários referenciando-os. Ou seja, em todos os exemplos de código cuja funcionalidade exemplificada modela um conceito descrito em uma descrição conceitual na DFDS, esse conceito é referenciado e apontado no exemplo via comentários de código.
 
 **Consequências:**  
-Quando não há referências conceituais em comentários de código, há dificuldade para relacionar o código apresentado com os conceitos descritos na documentação.
+Quando as referências conceituais em comentários de código não estão completas, há dificuldade no entendimento da relação entre as funcionalidades e os conceitos da ferramenta devido à falta de referências.
 
 **Exemplo de boa aplicação:**  
-Em [1], os comentários no código fazem referência direta aos conceitos apresentados na seção conceitual da DFDS.
+Na documentação da ferramenta PIL os comentários de código no seguinte exemplo mencionam os conceitos utilizados:
 
-**Imagem presente no PDF. Inserir aqui.**
+![Screenshot](../imagens/img (52).png)
 
 **Exemplo de aplicação ruim:**  
-Código apresentado sem comentários ou com comentários que não fazem referência a conceitos descritos na DFDS.
+Na documentação da ferramenta Matplotlib os comentários no código do seguinte exemplo não mencionam ou referenciam todos os conceitos utilizados:
+
+![Screenshot](../imagens/img (118).png)
 
 **Verificação:**  
-Os comentários de código fazem referência explícita a conceitos previamente descritos.
+Todos os exemplos de código cuja funcionalidade exemplificada modele um conceito externo à ferramenta possuem comentários que referenciam os conceitos utilizados pela funcionalidade exemplificada.
 
 ---
 
 #### 6.2 Corretude
-As referências conceituais em comentários de código são consideradas corretas quando não apresentam erros conceituais ou de associação entre código e conceito.
+As referências conceituais em comentários de código são consideradas corretas quando o conceito referenciado pelos comentários é aquele modelado pela funcionalidade exemplificada.
 
 **Consequências:**  
-Quando as referências conceituais estão incorretas, há entendimento equivocado sobre o funcionamento da ferramenta.
+Quando as referências conceituais em comentários de código não estão corretas, há entendimento equivocado sobre o domínio das funcionalidades da ferramenta devido à presença de referências equivocadas.
 
 **Exemplo de boa aplicação:**  
-Em [1], os comentários fazem referência correta aos conceitos utilizados no código.
+Na documentação da biblioteca PIL o seguinte exemplo referencia os conceitos corretos:
 
-**Imagem presente no PDF. Inserir aqui.**
+![Screenshot](../imagens/img (52).png)
 
 **Exemplo de aplicação ruim:**  
-Comentários que associam o código a um conceito incorreto.
+As documentações de exemplo não apresentam referências conceituais incorretas em comentários de código. Usando o exemplo anterior, seria incorreto:
+
+![Screenshot](../imagens/img (55).png)
 
 **Verificação:**  
-As referências conceituais em comentários de código estão de acordo com os conceitos descritos na DFDS.
+Todos os comentários de código presentes nos exemplos de código que mencionam conceitos, mencionam os utilizados pelo código presente no exemplo.
 
 ---
 
 #### 6.3 Relevância
-As referências conceituais em comentários de código são consideradas relevantes quando auxiliam efetivamente o entendimento do código apresentado.
-
-**Consequências:**  
-Quando as referências não são relevantes, os comentários não agregam valor ao entendimento do código.
-
-**Exemplo de boa aplicação:**  
-Em [1], os comentários explicam a aplicação de conceitos importantes para compreender o funcionamento do código.
-
-**Imagem presente no PDF. Inserir aqui.**
-
-**Exemplo de aplicação ruim:**  
-Comentários triviais que não contribuem para o entendimento conceitual do código.
-
-**Verificação:**  
-Os comentários de código contribuem para o entendimento conceitual do funcionamento da ferramenta.
+A relevância não afeta essa propriedade.
 
 ---
 
 #### 6.4 Contextualização
-As referências conceituais em comentários de código são consideradas contextualizadas quando explicam o papel do conceito no funcionamento específico do trecho de código.
+As referências conceituais em comentários de código são consideradas contextualizadas quando fica claro que parte do código utiliza o conceito mencionado. Ou seja, a posição do comentário facilita o entendimento de qual trecho do código utiliza o conceito referenciado.
 
 **Consequências:**  
-Quando não há contextualização, há dificuldade para entender por que o conceito é relevante naquele trecho de código.
+Quando as referências conceituais em comentários de código não estão contextualizadas, há falta de entendimento sobre o domínio das funcionalidades da ferramenta devido às referências apresentadas serem ambíguas sobre a funcionalidade a qual a referência pertence.
 
 **Exemplo de boa aplicação:**  
-Em [1], os comentários explicam como o conceito está sendo aplicado no código.
+Na documentação da ferramenta PIL o exemplo a seguir deixa claro pelo posicionamento dos comentários que trechos de código utilizam os conceitos mencionados e como:
 
-**Imagem presente no PDF. Inserir aqui.**
+![Screenshot](../imagens/img (52).png)
 
 **Exemplo de aplicação ruim:**  
-Comentários que citam conceitos sem explicar sua aplicação no código.
+As documentações de exemplo não possuem referências conceituais em comentários de código não contextualizadas, usando o exemplo anterior, a não contextualização poderia ser da seguinte forma:
+
+![Screenshot](../imagens/img (57).png)
 
 **Verificação:**  
-Os comentários de código explicam o papel do conceito no trecho apresentado.
+Os comentários de referências conceituais estão posicionados de acordo com a funcionalidade que utiliza o conceito referenciado.
 
 ---
 
 ### Atributos de Apresentação
 
 #### 6.5 Boa legibilidade
-As referências conceituais em comentários de código são consideradas legíveis quando estão bem escritas e não apresentam erros gramaticais.
+As referências conceituais em comentários de código são consideradas com boa legibilidade quando os comentários estão bem escritos (fácil de entender).
 
 **Consequências:**  
-Quando os comentários não possuem boa legibilidade, há dificuldade para compreender a relação entre código e conceito.
+Quando as referências conceituais em comentários de código não estão com boa legibilidade, há dificuldade no entendimento da referência feita devido a dificuldade de leitura das referências.
 
 **Exemplo de boa aplicação:**  
-Em [1], os comentários são claros e bem escritos.
+Na documentação da ferramenta PIL há boa legibilidade das referências conceituais no seguinte exemplo de código:
 
-**Imagem presente no PDF. Inserir aqui.**
+![Screenshot](../imagens/img (52).png)
 
 **Exemplo de aplicação ruim:**  
-Comentários confusos ou com erros gramaticais.
+Nas documentações de exemplo não há legibilidade ruim em referências conceituais em exemplos de código, usando o exemplo acima, uma legibilidade ruim poderia ser:
+
+![Screenshot](../imagens/img (58).png)
 
 **Verificação:**  
-Os comentários de código são bem escritos e fáceis de entender.
+Todos os comentários de código dos exemplos de código estão bem escritos e não apresentam erros gramaticais.
 
 ---
 
 #### 6.6 Clareza
-As referências conceituais em comentários de código são consideradas claras quando é possível identificar facilmente a qual conceito o comentário se refere.
+As referências conceituais em comentários de código são consideradas claras quando fica explícito qual conceito é referenciado pelos comentários de código.
 
 **Consequências:**  
-Quando não há clareza, o leitor pode não identificar corretamente o conceito associado ao código.
+Quando as referências conceituais em comentários de código não estão claras, há dificuldade de identificar a qual conceito o comentário de código se refere devido à falta de concordância entre o texto do comentário e o restante da documentação em relação ao conceito.
 
 **Exemplo de boa aplicação:**  
-Em [1], os comentários citam explicitamente o nome do conceito.
+Na documentação da ferramenta PIL o seguinte exemplo possui referências claras por usar o mesmo nome para o conceito como em outras partes da documentação:
 
-**Imagem presente no PDF. Inserir aqui.**
+![Screenshot](../imagens/img (52).png)
 
 **Exemplo de aplicação ruim:**  
-Comentários vagos que não identificam claramente o conceito referido.
+As documentações de exemplo possuem clareza em todas as referências conceituais em comentários de código. Usando o exemplo acima, a falta de clareza poderia ser ao invés de usar o nome utilizado em “Concepts” usar um sinônimo:
+
+![Screenshot](../imagens/img (59).png)
 
 **Verificação:**  
-Os comentários de código identificam claramente o conceito associado.
+Todos os comentários de referências conceituais possuem em seu texto o nome do conceito referenciado assim como está na explicação conceitual (Regra 1)
 
 ---
 
 #### 6.7 Estrutura organizada
-A apresentação das referências conceituais em comentários de código é considerada organizada quando segue um padrão consistente ao longo da DFDS.
-
-**Consequências:**  
-Quando não há organização, os comentários variam de formato e dificultam a leitura.
-
-**Exemplo de boa aplicação:**  
-Em [1], todos os comentários conceituais seguem o mesmo padrão de escrita.
-
-**Imagem presente no PDF. Inserir aqui.**
-
-**Exemplo de aplicação ruim:**  
-Comentários apresentados de forma inconsistente ao longo da DFDS.
-
-**Verificação:**  
-Os comentários conceituais seguem um padrão consistente.
+Verificar 3.7

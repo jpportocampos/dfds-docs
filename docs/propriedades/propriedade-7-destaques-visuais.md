@@ -1,143 +1,123 @@
-# Propriedade 7: Destaques visuais
+# 7- Propriedade: Destaques visuais
 
-Propriedade de apresentação. A DFDS deve utilizar destaques visuais para enfatizar informações importantes, como avisos, alertas e observações relevantes ao uso da ferramenta. [Arya et al. 2024, Treude et al. 2020, van Loggem 2013]
+Propriedade de apresentação e estrutura. Utilização de elementos de destaque na documentação para apresentar informações importantes para o desenvolvedor.
 
 ## Pré-Condições
-Essa propriedade só é aplicável quando a DFDS apresenta informações que necessitam de destaque para correta compreensão ou uso da ferramenta.
+Essa propriedade só é aplicável quando é necessário atentar o desenvolvedor para um conteúdo da documentação sem a necessidade do desenvolvedor acessar outra parte da DFDS.
 
 ## Atributos
 
 ### Atributos de Conteúdo
 
-#### 7.1 Presença de destaques visuais
-Os destaques visuais são considerados adequados quando informações importantes são explicitamente destacadas por meio de elementos visuais.
+#### 7.1 Completude
+Os destaques visuais da DFDS são considerados completos quando algum elemento de destaque é utilizado para chamar atenção para um conteúdo sem a necessidade de redirecionar para outras seções.
 
 **Consequências:**  
-Quando não há destaques visuais, informações importantes podem passar despercebidas pelo leitor.
+Quando os destaques visuais não estão completos, não há forma de chamar atenção para informações importantes devido à falta de elementos de destaque.
 
 **Exemplo de boa aplicação:**  
-Em [1], avisos importantes são destacados por meio de caixas de alerta.
+Na documentação da ferramenta PIL o elemento de destaque utilizado é em forma de avisos e notas em diferentes partes da documentação, atentando o desenvolvedor para alguma informação importante sobre o conteúdo relacionado:
 
-**Imagem presente no PDF. Inserir aqui.**
+![Screenshot](../imagens/img (61).png)
+
+![Screenshot](../imagens/img (62).png)
 
 **Exemplo de aplicação ruim:**  
-Informações críticas apresentadas apenas em texto corrido.
+As documentações de exemplo não apresentam elementos de destaque incompletos. Usando como exemplo a documentação da ferramenta PIL, caso não existissem as notas e avisos e nenhum tipo de elemento de destaque fosse utilizado para isso ou essas informações estivessem disponíveis apenas em outra parte da DFDS, seria uma incompletude dos destaques visuais.
 
 **Verificação:**  
-Informações importantes estão explicitamente destacadas por elementos visuais.
+Todo conteúdo que exige atenção na documentação apresenta elementos de destaque para apresentar esse conteúdo sem a necessidade de redirecionar o desenvolvedor para outra seção da documentação.
 
 ---
 
 #### 7.2 Corretude
-Os destaques visuais são considerados corretos quando enfatizam informações realmente relevantes e não induzem o leitor ao erro.
+Os destaques visuais da DFDS são considerados corretos quando as explicações presentes nos elementos de destaque estão de acordo com o conteúdo referenciado.
 
 **Consequências:**  
-Quando os destaques são utilizados incorretamente, o leitor pode dar importância indevida a informações secundárias.
+Quando os destaques visuais não estão corretos, há presença de informações incorretas com maior atenção devido à presença de informações equivocadas no elemento de destaque.
 
 **Exemplo de boa aplicação:**  
-Em [1], apenas informações críticas ao uso da ferramenta são destacadas.
+Na documentação da ferramenta PIL os elementos de destaque utilizados apresentam informações de acordo com a definição dos conteúdos relacionados:
 
-**Imagem presente no PDF. Inserir aqui.**
+![Screenshot](../imagens/img (63).png)
 
 **Exemplo de aplicação ruim:**  
-Destaque visual aplicado a informações irrelevantes.
+As documentações não apresentam destaques visuais incorretos. Usando o exemplo acima, caso a informação na nota apresentasse uma informação equivocada, seria incorreto. No exemplo abaixo, a nota nega a informação do exemplo anterior:
+
+![Screenshot](../imagens/img (64).png)
 
 **Verificação:**  
-Os destaques visuais enfatizam apenas informações relevantes.
+O texto dos destaques visuais apresentam explicações corretas de acordo com o conteúdo referenciado.
 
 ---
 
 #### 7.3 Relevância
-Os destaques visuais são considerados relevantes quando auxiliam efetivamente o leitor a identificar informações importantes.
-
-**Consequências:**  
-Quando os destaques não são relevantes, eles perdem seu propósito e podem confundir o leitor.
-
-**Exemplo de boa aplicação:**  
-Em [1], os destaques ajudam o leitor a evitar erros comuns de uso da ferramenta.
-
-**Imagem presente no PDF. Inserir aqui.**
-
-**Exemplo de aplicação ruim:**  
-Uso excessivo de destaques que dificulta a identificação do que é realmente importante.
-
-**Verificação:**  
-Os destaques visuais auxiliam na identificação de informações importantes.
+Os destaques visuais são considerados relevantes quando as explicações apresentadas seguem as regras de relevância do conteúdo apresentado (verificar 1.3 para explicações conceituais e 2.3 para cobertura funcional)
 
 ---
 
 #### 7.4 Contextualização
-Os destaques visuais são considerados contextualizados quando estão posicionados próximos às informações às quais se referem.
+Os destaques visuais são considerados contextualizados quando a referência que possui o elemento de destaque deixa claro qual é o conteúdo referenciado.
 
 **Consequências:**  
-Quando os destaques não estão contextualizados, o leitor pode não compreender a que informação o destaque se refere.
+Quando os destaques visuais não estão contextualizados, há dificuldade no entendimento da informação destacada devido ao elemento de destaque ser ambíguo sobre qual conteúdo ele referencia.
 
 **Exemplo de boa aplicação:**  
-Em [1], o destaque visual aparece imediatamente antes ou depois da informação relevante.
+Na documentação da bilbioteca Matplotlib os elementos de destaque estão contextualizados por estarem posicionados logo após o conteúdo que estão relacionados:
 
-**Imagem presente no PDF. Inserir aqui.**
+![Screenshot](../imagens/img (119).png)
 
 **Exemplo de aplicação ruim:**  
-Destaque visual distante do conteúdo ao qual se refere.
+As documentações de exemplo não apresentam elementos de destaque sem contextualização. Usando o exemplo anterior, seria falta de contextualização se ao invés de logo após o conteúdo, o elemento de destaque fosse localizado no final da página.
 
 **Verificação:**  
-Os destaques visuais estão posicionados próximos às informações relevantes.
+Todos os elementos de destaque estão localizados junto ao conteúdo referenciado.
 
 ---
 
 ### Atributos de Apresentação
 
 #### 7.5 Boa legibilidade
-Os destaques visuais são considerados legíveis quando o texto destacado é claro e fácil de ler.
-
-**Consequências:**  
-Quando os destaques não possuem boa legibilidade, há dificuldade para compreender a informação destacada.
-
-**Exemplo de boa aplicação:**  
-Em [1], o texto destacado possui contraste adequado e fonte legível.
-
-**Imagem presente no PDF. Inserir aqui.**
-
-**Exemplo de aplicação ruim:**  
-Texto destacado com baixo contraste ou fonte pequena.
-
-**Verificação:**  
-Os destaques visuais possuem boa legibilidade.
+Os destaques visuais são considerados com boa legibilidade quando as explicações apresentadas seguem as regras de boa legibilidade do conteúdo apresentado (verificar 1.5 para explicações conceituais e 2.5 para cobertura funcional)
 
 ---
 
 #### 7.6 Clareza
-Os destaques visuais são considerados claros quando é possível identificar facilmente o tipo de informação que está sendo destacada.
+Os destaques visuais são considerados claros quando fica explícito qual é o tipo de conteúdo referenciado
 
 **Consequências:**  
-Quando os destaques não são claros, o leitor pode não entender a importância da informação.
+Quando os destaques visuais não estão claros, há dificuldade no entendimento da informação destacada devido à dificuldade de identificar que tipo de conteúdo está presente no elemento de destaque.
 
 **Exemplo de boa aplicação:**  
-Em [1], diferentes tipos de destaque são utilizados para diferentes tipos de informação (aviso, alerta, observação).
+Na documentação da biblioteca PIL o seguinte elemento de destaque deixa claro que é sobre uma funcionalidade ao utilizar uma a mesma formatação de texto para o nome da funcionalidade que no restante da documentação:
 
-**Imagem presente no PDF. Inserir aqui.**
+![Screenshot](../imagens/img (120).png)
 
 **Exemplo de aplicação ruim:**  
-Uso de um mesmo tipo de destaque para informações de naturezas diferentes.
+Na documentação da ferramenta Matplotlib o seguinte elemento de destaque não deixa claro que seu conteúdo é sobre uma funcionalidade ou um conceito de imagens interativas:
+
+![Screenshot](../imagens/img (121).png)
 
 **Verificação:**  
-Os destaques visuais permitem identificar claramente o tipo de informação destacada.
+Todas as explicações nos elementos de destaque possuem em seu texto ou título um trecho explicitando o tipo de conteúdo referenciado.
 
 ---
 
 #### 7.7 Estrutura organizada
-A utilização de destaques visuais é considerada organizada quando segue um padrão consistente ao longo da DFDS.
+Os destaques visuais da DFDS são considerados organizados estruturalmente quando os elementos de destaque utilizados são do mesmo tipo e formatação em toda a documentação.
 
 **Consequências:**  
-Quando não há organização, os destaques visuais podem causar confusão.
+Quando os destaques visuais não estão organizados estruturalmente, há falta de entendimento sobre as informações destacadas devido à dificuldade de entender o uso dos diferentes elementos de destaque para os mesmos conteúdos.
 
 **Exemplo de boa aplicação:**  
-Em [1], os destaques seguem um padrão visual consistente.
-
-**Imagem presente no PDF. Inserir aqui.**
+Na documentação da ferramenta PIL todos os elementos de destaque são do mesmo tipo e de mesma formatação, alterando apenas a cor para avisos.
 
 **Exemplo de aplicação ruim:**  
-Uso inconsistente de cores ou formatos para destaques.
+Na documentação da ferramenta Axios os elementos de destaque, no caso notas, possuem formatações diferentes em partes diferentes da documentação, com e sem o título “Nota”:
+
+![Screenshot](../imagens/img (68).png)
+
+![Screenshot](../imagens/img (69).png)
 
 **Verificação:**  
-Os destaques visuais seguem um padrão consistente.
+Todos os elementos de destaque utilizados são do mesmo tipo e com a mesma formatação.

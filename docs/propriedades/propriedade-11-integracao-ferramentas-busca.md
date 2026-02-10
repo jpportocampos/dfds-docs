@@ -1,143 +1,97 @@
-# Propriedade 11: Integração com ferramentas de busca
+# 11- Propriedade: Integração com ferramentas de busca
 
-Propriedade de apresentação. A DFDS deve estar integrada a ferramentas de busca que auxiliem o leitor a encontrar rapidamente informações específicas dentro da documentação. [Arya et al. 2024, Treude et al. 2020, van Loggem 2013]
+Propriedade de uso. Utilização de ferramentas de busca textual para facilitar a consulta de informações específicas na documentação.
 
 ## Pré-Condições
-Essa propriedade só é aplicável quando a DFDS possui quantidade significativa de conteúdo textual.
+Essa propriedade só é aplicável se o meio de apresentação escolhido para a DFDS não possuir um mecanismo de busca funcional próprio.
 
 ## Atributos
 
 ### Atributos de Conteúdo
 
-#### 11.1 Presença de ferramenta de busca
-A integração com ferramentas de busca é considerada adequada quando a DFDS disponibiliza um mecanismo de busca que permite localizar conteúdos específicos.
+#### 11.1 Completude
+A integração de ferramentas de busca é considerada completa quando a ferramenta de busca integrada na documentação pode ser usada para realizar consultas a todo o conteúdo da documentação.
 
 **Consequências:**  
-Quando não há ferramenta de busca, há dificuldade para encontrar informações específicas em documentações extensas.
+Quando a integração de ferramentas de busca não está completa, há necessidade de busca manual de conteúdos devido à falta de uma ferramenta para consulta de uma informação específica.
 
 **Exemplo de boa aplicação:**  
-Em [1], a DFDS possui um campo de busca que permite localizar rapidamente conteúdos específicos.
-
-**Imagem presente no PDF. Inserir aqui.**
+Na documentação da ferramenta PIL a ferramenta de busca realiza as consultas comparando o texto da busca com o da documentação, garantindo que todo o conteúdo relevante será incluído na busca.
 
 **Exemplo de aplicação ruim:**  
-Documentação extensa sem qualquer mecanismo de busca.
+Na documentação da ferramenta Axios não foi adicionada uma ferramenta de busca na própria documentação, deixando a tarefa para a busca integrada no navegador de internet, limitando a busca para a página atual ao invés de toda a documentação.
 
 **Verificação:**  
-A DFDS disponibiliza uma ferramenta de busca funcional.
+Todo o conteúdo da DFDS pode ser consultado via ferramenta de busca.
 
 ---
 
 #### 11.2 Corretude
-A integração com ferramentas de busca é considerada correta quando os resultados apresentados correspondem aos termos pesquisados.
+A integração de ferramentas de busca é considerada correta quando as consultas realizadas na ferramenta de busca integrada retornam os conceitos e funcionalidades desejados.
 
 **Consequências:**  
-Quando a ferramenta de busca não é correta, o leitor pode não encontrar a informação desejada ou encontrar informações irrelevantes.
+Quando a integração de ferramentas de busca não está correta, há necessidade de busca manual de conteúdos devido à falta de uma ferramenta funcional para consulta de informações.
 
 **Exemplo de boa aplicação:**  
-Em [1], a busca retorna resultados diretamente relacionados ao termo pesquisado.
-
-**Imagem presente no PDF. Inserir aqui.**
+Na documentação da ferramenta PIL a busca funciona corretamente, apontando os resultados de acordo com o termo buscado.
 
 **Exemplo de aplicação ruim:**  
-Resultados de busca que não correspondem ao termo pesquisado.
+As documentações de exemplo não apresentam caso de incorreção na ferramenta de busca. Usando a documentação da ferramenta PIL como exemplo, se ao buscar “Color” aparecessem resultados para o termo “Filter” e nenhum relacionado ao termo “Color”, seria o caso de uma incorreção.
 
 **Verificação:**  
-Os resultados da busca correspondem aos termos informados pelo leitor.
+Todas as buscas realizadas na ferramenta integrada apresentam resultados de acordo com a consulta realizada
 
 ---
 
 #### 11.3 Relevância
-A integração com ferramentas de busca é considerada relevante quando os resultados apresentados priorizam os conteúdos mais importantes.
-
-**Consequências:**  
-Quando os resultados não são relevantes, o leitor pode perder tempo analisando informações irrelevantes.
-
-**Exemplo de boa aplicação:**  
-Em [1], os resultados mais relevantes aparecem nas primeiras posições.
-
-**Imagem presente no PDF. Inserir aqui.**
-
-**Exemplo de aplicação ruim:**  
-Resultados relevantes apresentados apenas após conteúdos secundários.
-
-**Verificação:**  
-Os resultados da busca priorizam conteúdos relevantes.
+A Relevância não afeta essa funcionalidade.
 
 ---
 
 #### 11.4 Contextualização
-A integração com ferramentas de busca é considerada contextualizada quando os resultados apresentados fornecem contexto suficiente para o leitor identificar a informação desejada.
-
-**Consequências:**  
-Quando não há contextualização, o leitor pode não identificar corretamente qual resultado atende à sua necessidade.
-
-**Exemplo de boa aplicação:**  
-Em [1], os resultados de busca apresentam trechos do conteúdo onde o termo aparece.
-
-**Imagem presente no PDF. Inserir aqui.**
-
-**Exemplo de aplicação ruim:**  
-Resultados apresentados apenas como títulos, sem contexto.
-
-**Verificação:**  
-Os resultados da busca fornecem contexto suficiente para identificação do conteúdo.
+A Contextualização não afeta essa funcionalidade.
 
 ---
 
 ### Atributos de Apresentação
 
 #### 11.5 Boa legibilidade
-A ferramenta de busca é considerada legível quando sua interface é clara e fácil de usar.
-
-**Consequências:**  
-Quando a ferramenta de busca não possui boa legibilidade, há dificuldade para utilizá-la.
-
-**Exemplo de boa aplicação:**  
-Em [1], o campo de busca é claramente identificado e fácil de utilizar.
-
-**Imagem presente no PDF. Inserir aqui.**
-
-**Exemplo de aplicação ruim:**  
-Campo de busca pouco visível ou confuso.
-
-**Verificação:**  
-A interface da ferramenta de busca é clara e legível.
+A Boa legibilidade não afeta essa propriedade.
 
 ---
 
 #### 11.6 Clareza
-A integração com ferramentas de busca é considerada clara quando o leitor entende facilmente como utilizar o mecanismo de busca.
+A integração de ferramentas de busca é considerada clara quando fica explícito que há uma ferramenta de busca na documentação.
 
 **Consequências:**  
-Quando não há clareza, o leitor pode não utilizar a ferramenta de busca corretamente.
+Quando a integração de ferramentas de busca não está clara, há dificuldade de navegação na DFDS devido à dificuldade de identificar que existe uma ferramenta de busca.
 
 **Exemplo de boa aplicação:**  
-Em [1], a ferramenta de busca possui indicações claras de uso.
-
-**Imagem presente no PDF. Inserir aqui.**
+Na documentação da ferramenta PIL a ferramenta de busca se encontra logo acima do índice da documentação e está presente em todas as páginas.
 
 **Exemplo de aplicação ruim:**  
-Ausência de qualquer indicação de como utilizar a busca.
+As documentações de exemplo não possuem casos de falta de clareza na ferramenta de busca. Usando a documentação da ferramenta PIL como exemplo, caso a ferramenta de busca ficasse visível apenas na página inicial, seria um caso de falta de clareza.
 
 **Verificação:**  
-A ferramenta de busca apresenta indicações claras de uso.
+A ferramenta de busca é visível por todo o tempo de acesso à documentação.
 
 ---
 
 #### 11.7 Estrutura organizada
-A integração com ferramentas de busca é considerada organizada quando o mecanismo de busca está bem integrado à estrutura geral da DFDS.
+A integração de ferramentas de busca é considerada organizada estruturalmente quando o padrão visual adotado deixa explícito ao desenvolvedor que ali se encontra uma ferramenta de busca.
 
 **Consequências:**  
-Quando não há organização, a ferramenta de busca pode ser difícil de localizar ou utilizar.
+Quando a integração de ferramentas de busca não está organizada estruturalmente, há dificuldade de navegação na DFDS devido à dificuldade de encontrar a ferramenta de busca.
 
 **Exemplo de boa aplicação:**  
-Em [1], a ferramenta de busca está integrada ao layout principal da DFDS.
+Na documentação da ferramenta PIL a ferramenta de busca está organizada estruturalmente por estar em uma formatação comumente adotada em  ferramentas de busca:
 
-**Imagem presente no PDF. Inserir aqui.**
+![Screenshot](../imagens/img (127).png)
 
 **Exemplo de aplicação ruim:**  
-Ferramenta de busca isolada ou difícil de acessar.
+Na documentação da ferramenta Matplotlib a ferramenta de busca está em formato diferente do padrão normalmente adotado, deixando-a um pouco escondida do desenvolvedor:
+
+![Screenshot](../imagens/img (107).png)
 
 **Verificação:**  
-A ferramenta de busca está integrada de forma organizada à DFDS.
+A ferramenta de busca está disponível em um padrão visual normalmente adotado em ferramentas de busca

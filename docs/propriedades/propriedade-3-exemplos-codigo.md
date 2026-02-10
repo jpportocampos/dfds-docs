@@ -1,141 +1,153 @@
-# Propriedade 3: Exemplos e fragmentos de código
+# 3- Propriedade: Exemplos e fragmentos de código
 
-Propriedade de conteúdo. A DFDS deve apresentar exemplos e fragmentos de código que demonstrem o uso das funcionalidades da ferramenta. [Arya et al. 2024, Treude et al. 2020, Uddin and Robillard 2015]
+Propriedade de conteúdo. Trechos de código utilizados para demonstrar o uso de uma ou mais funcionalidades da ferramenta.
 
 ## Pré-Condições
-Essa propriedade só é aplicável quando a ferramenta possui funcionalidades que podem ser utilizadas por meio de código.
+Essa propriedade só é aplicável quando se tem alguma funcionalidade da ferramenta que pode ser apresentada em exemplos de código.
 
 ## Atributos
 
 ### Atributos de Conteúdo
 
 #### 3.1 Completude
-A apresentação de exemplos e fragmentos de código é considerada completa quando todas as funcionalidades descritas possuem ao menos um exemplo ou fragmento de código associado.
+Um exemplo de código é considerado completo quando o código presente nele possui todos os seus elementos (funções, variáveis, etc.) inicializados ou contextualizados por comentários.
 
 **Consequências:**  
-Quando a apresentação de exemplos e fragmentos de código não está completa, há falta de entendimento sobre o uso das funcionalidades da ferramenta devido à ausência de demonstrações práticas.
+Quando um exemplo de código não está completo, a DFDS não possui todas as informações necessárias para o entendimento da ferramenta devido à falta de informações sobre o uso das funcionalidades da ferramenta.
 
 **Exemplo de boa aplicação:**  
-Em [1], todas as funcionalidades possuem exemplos de código associados.
+Na documentação da ferramenta PIL, o seguinte exemplo de código está completo por não só inicializar todos os elementos presentes mas também por demonstrar os imports:
+
+![Screenshot](../imagens/img (31).png)
 
 **Exemplo de aplicação ruim:**  
-Em [2], algumas funcionalidades são descritas apenas textualmente, sem exemplos de código.
+As dcumentações de exemplo não possuem casos de incompletude em exemplos de código. Usando o exemplo anterior, caso o import não estivesse presente no exemplo de código, ele estaria incompleto.
 
 **Verificação:**  
-Cada funcionalidade descrita na DFDS possui ao menos um exemplo ou fragmento de código associado.
+Todos os elementos de código presentes nos exemplos de código estão inicializados ou contextualizados por comentários.
 
 ---
 
 #### 3.2 Corretude
-Os exemplos e fragmentos de código são considerados corretos quando não apresentam erros de sintaxe ou de uso da funcionalidade demonstrada.
+Um exemplo de código é considerado correto quando o código presente nele não apresenta erros de sintaxe e quando, ao copiar e colar em um ambiente configurado corretamente, o código compila sem erros.
 
 **Consequências:**  
-Quando os exemplos e fragmentos de código não estão corretos, há entendimento equivocado sobre o uso das funcionalidades da ferramenta.
+Quando um exemplo de código não está correto, a DFDS apresenta informações ambíguas ou equivocadas sobre o uso da ferramenta devido à presença de informações equivocadas presentes no exemplo incorreto.
 
 **Exemplo de boa aplicação:**  
-Em [1], os exemplos apresentados podem ser executados corretamente.
+Na documentação da ferramenta PIL, o seguinte exemplo de código está correto pois não apresenta erro de sintaxe e ao copiar e colar em um ambiente Python com a biblioteca instalada, ele compilaria sem erros:
 
-**Imagem presente no PDF. Inserir aqui.**
+![Screenshot](../imagens/img (32).png)
 
 **Exemplo de aplicação ruim:**  
-Um exemplo de aplicação ruim seria a apresentação de um código que não pode ser executado devido a erro de sintaxe.
+As documentações de exemplo não apresentam casos de exemplos de código incorretos. Usando o exemplo anterior, caso houvesse nele um erro de sintaxe, como utilizar “;” ao invés de “,” na definição da variável “size”, ele estaria incorreto.
 
 **Verificação:**  
-Os exemplos e fragmentos de código podem ser executados corretamente e demonstram o uso adequado da funcionalidade.
+Todos os exemplos de código apresentam código sem erros de sintaxe e que, ao copiar e colar em um ambiente devidamente configurado, o código compila sem apresentar erros e o resultado da compilação é igual ao apontado na DFDS.
 
 ---
 
 #### 3.3 Relevância
-Os exemplos e fragmentos de código são considerados relevantes quando demonstram casos reais de uso da ferramenta.
+Um exemplo de código é considerado relevante quando ele representa um caso real de uso da ferramenta.
 
 **Consequências:**  
-Quando os exemplos e fragmentos de código não são relevantes, há dificuldade para compreender como a funcionalidade é utilizada em cenários reais.
+Quando um exemplo de código não é relevante, a informação é apresentada sem considerar o contexto de aplicação da ferramenta, criando uma dificuldade para compreender os cenários reais de uso das funcionalidades representadas no exemplo de código.
 
 **Exemplo de boa aplicação:**  
-Em [1], os exemplos demonstram o uso das funcionalidades em cenários comuns de desenvolvimento.
+O seguinte exemplo de código da documentação da ferramenta PIL possui relevância pois demonstra um caso de uso real da ferramenta, no caso, converter um arquivo de imagem para o formato jpeg:
 
-**Imagem presente no PDF. Inserir aqui.**
+![Screenshot](../imagens/img (33).png)
 
 **Exemplo de aplicação ruim:**  
-Um exemplo que demonstra um uso artificial ou pouco comum da funcionalidade.
+O seguinte exemplo de código da documentação da ferramenta PIL não é relevante pois não apresenta um caso real de uso da ferramenta:
+
+![Screenshot](../imagens/img (34).png)
 
 **Verificação:**  
-Os exemplos e fragmentos de código representam cenários reais de uso da ferramenta.
+Todos os exemplos de código apresentam código que representa um caso real de uso da ferramenta.
 
 ---
 
 #### 3.4 Contextualização
-Os exemplos e fragmentos de código são considerados contextualizados quando fica claro em que situação e para qual finalidade a funcionalidade é utilizada.
+Um exemplo de código é considerado contextualizado quando fica claro em que contexto de uso e implementação o exemplo é utilizado. Ou seja, os exemplos de código apresentam algum elemento que explicita como e em que contextos se utiliza o exemplo apresentado.
 
 **Consequências:**  
-Quando os exemplos e fragmentos de código não estão contextualizados, há entendimento equivocado sobre quando utilizar a funcionalidade.
+Quando um exemplo de código não está contextualizado, a informação sobre o uso da funcionalidade representada no exemplo é apresentada sem indicar o contexto de uso em que o exemplo pudesse ser usado, deixando ambíguo o entendimento sobre os cenários de uso nos quais se utilizaria a funcionalidade exemplificada.
 
 **Exemplo de boa aplicação:**  
-Em [1], antes do código é explicado o contexto de uso da funcionalidade.
+O seguinte exemplo de código da documentação da ferramenta PIL possui um texto de introdução que o contextualiza:
 
-**Imagem presente no PDF. Inserir aqui.**
+![Screenshot](../imagens/img (35).png)
 
 **Exemplo de aplicação ruim:**  
-Apresentação de código sem explicação do cenário em que deve ser utilizado.
+As documentações de exemplo não possuem exemplos de código não contextualizados, logo, se o exemplo acima, ao invés do título e introdução, fosse apresentado da seguinte forma, não haveria contextualização:
+
+![Screenshot](../imagens/img (37).png)
 
 **Verificação:**  
-Os exemplos e fragmentos de código apresentam explicação clara do contexto de uso.
+Todos os exemplos de código possuem algum elemento (comentário, nome de função, título, etc.) que deixe claro o cenário de uso do exemplo.
 
 ---
 
 ### Atributos de Apresentação
 
 #### 3.5 Boa legibilidade
-Os exemplos e fragmentos de código são considerados legíveis quando possuem indentação adequada, nomes claros e não apresentam erros que dificultem a leitura.
+Um exemplo de código é considerado com boa legibilidade quando seu código está bem escrito (fácil de entender) e as nomenclaturas de variáveis e funções estão de acordo com boas práticas.
 
 **Consequências:**  
-Quando os exemplos e fragmentos de código não possuem boa legibilidade, há dificuldade para compreender o uso das funcionalidades.
+Quando um exemplo de código não está com boa legibilidade, o entendimento do exemplo de código é prejudicado devido a dificuldade de leitura do código no exemplo.
 
 **Exemplo de boa aplicação:**  
-Em [1], o código está bem formatado e organizado.
+Na documentação da biblioteca PIL os exemplos apresentam boa legibilidade pois estão bem escritos e seguem boas práticas de codificação em Python:
 
-**Imagem presente no PDF. Inserir aqui.**
+![Screenshot](../imagens/img (38).png)
 
 **Exemplo de aplicação ruim:**  
-Código apresentado sem indentação ou com nomes de variáveis confusos.
+As documentações de exemplo não apresentam casos de exemplos de código com legibilidade ruim. Usando o exemplo anterior, o código teria legibilidade ruim caso fosse exrito da seguinte forma:
+
+![Screenshot](../imagens/img (39).png)
 
 **Verificação:**  
-Os exemplos e fragmentos de código estão bem formatados e são fáceis de ler.
+Todos os elementos de código dos exemplos de código apresentam boas práticas em suas nomenclaturas e o código está bem escrito.
 
 ---
 
 #### 3.6 Clareza
-Os exemplos e fragmentos de código são considerados claros quando é explicitado que o trecho apresentado é um exemplo de uso da funcionalidade.
+Um exemplo de código é considerado claro quando é explicitada qual ou quais funcionalidades ele exemplifica.
 
 **Consequências:**  
-Quando os exemplos e fragmentos de código não estão claros, há dificuldade para identificar que o código é apenas demonstrativo.
+Quando um exemplo de código não está claro, há dificuldade para entender quais funcionalidades estão exemplificadas no código, dificultando o entendimento da ferramenta.
 
 **Exemplo de boa aplicação:**  
-Em [1], o código é identificado como exemplo por meio de títulos ou comentários.
+Na documentação da ferramenta PIL o seguinte exemplo está claro por estar localizado dentro da definição da função que ele exemplifica:
 
-**Imagem presente no PDF. Inserir aqui.**
+![Screenshot](../imagens/img (40).png)
 
 **Exemplo de aplicação ruim:**  
-Código apresentado sem indicação de que se trata de um exemplo.
+O seguinte exemplo de código da documentação da ferramenta PIL não está claro pois não define qual ou quais funcionalidades da ferramenta estão sendo usadas:
+
+![Screenshot](../imagens/img (42).png)
 
 **Verificação:**  
-Os exemplos e fragmentos de código são explicitamente identificados como tal.
+Todos os exemplos de código possuem alguma indicação de qual funcionalidade está sendo exemplificada.
 
 ---
 
 #### 3.7 Estrutura organizada
-A apresentação de exemplos e fragmentos de código é considerada organizada quando existe um padrão de estrutura para todos os exemplos apresentados na DFDS.
+Um exemplo de código é considerado organizada estruturalmente quando existe uma estrutura padrão e específica para código para todos os exemplos de código. Ou seja, todos os exemplos de código estão estruturados da mesma forma em toda a DFDS.
 
 **Consequências:**  
-Quando não há uma estrutura organizada, há dificuldade para encontrar exemplos relacionados a funcionalidades específicas.
+Quando um exemplo de código não está organizado estruturalmente, há dificuldade para encontrar informações sobre o uso das funcionalidades da ferramenta devido à dificuldade de identificar os exemplos de código.
 
 **Exemplo de boa aplicação:**  
-Em [1], todos os exemplos seguem o mesmo formato de apresentação.
+Os exemplos de código da documentação da ferramenta PIL estão organizados estruturalmente por estarem em formatação de código e a mesma formatação para diferentes exemplos:
 
-**Imagem presente no PDF. Inserir aqui.**
+![Screenshot](../imagens/img (43).png)
 
 **Exemplo de aplicação ruim:**  
-Exemplos apresentados em formatos variados ao longo da DFDS.
+As documentações de exemplo não apresentam casos de exemplos de código desorganizados estruturalmente. Usando o exemplo anterior, o primeiro exemplo de código da imagem estaria em uma estrutura desorganizada caso utilizasse formatação de texto:
+
+![Screenshot](../imagens/img (44).png)
 
 **Verificação:**  
-Todos os exemplos e fragmentos de código seguem uma estrutura padrão.
+Todos os exemplos de código estão estruturados da mesma forma e em uma formatação específica para código.

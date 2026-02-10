@@ -1,143 +1,101 @@
-# Propriedade 12: Versionamento
+# 12- Propriedade: Versionamento
 
-Propriedade de apresentação. A DFDS deve apresentar informações de versionamento que permitam ao leitor identificar claramente a versão da ferramenta e da documentação à qual o conteúdo se refere. [Arya et al. 2024, Treude et al. 2020, van Loggem 2013]
+Propriedade de uso. As documentações das diferentes versões disponíveis e mantidas da ferramenta estão disponíveis.
 
 ## Pré-Condições
-Essa propriedade só é aplicável quando a ferramenta possui versões distintas ao longo do tempo.
+Essa propriedade só é aplicável quando a ferramenta possui mais de uma versão disponível e mantida para uso.
 
 ## Atributos
 
 ### Atributos de Conteúdo
 
-#### 12.1 Presença de informações de versionamento
-O versionamento da DFDS é considerado adequado quando a documentação explicita claramente a versão da ferramenta à qual se refere.
+#### 12.1 Completude
+O versionamento é considerado completo quando as documentações de todas as versões da ferramenta estão disponíveis para os desenvolvedores.
 
 **Consequências:**  
-Quando não há informações de versionamento, o leitor pode utilizar informações incompatíveis com a versão da ferramenta em uso.
+Quando o versionamento não está completo, a DFDS se torna inutilizável para desenvolvedores que desejam utilizar as versões que não possuem sua versão contemplada na DFDS.
 
 **Exemplo de boa aplicação:**  
-Em [1], a versão da ferramenta é indicada de forma clara no topo da documentação.
+Na documentação da ferramenta Matplotlib todas as versões mantidas e disponíveis da biblioteca possuem documentação:
 
-**Imagem presente no PDF. Inserir aqui.**
+![Screenshot](../imagens/img (108).png)
 
 **Exemplo de aplicação ruim:**  
-Documentação que não indica a versão da ferramenta ou da própria DFDS.
+Na documentação da ferramenta Axios apenas uma documentação está disponível, porém existe mais de uma versão da ferramenta disponível para uso:
+
+![Screenshot](../imagens/img (109).png)
 
 **Verificação:**  
-A DFDS explicita claramente a versão da ferramenta documentada.
+Todas as versões mantidas e disponíveis da ferramenta possuem documentação disponível para uso.
 
 ---
 
 #### 12.2 Corretude
-As informações de versionamento são consideradas corretas quando correspondem efetivamente à versão da ferramenta descrita na DFDS.
+O versionamento é considerado correto quando as documentações disponíveis são referentes às versões disponíveis e mantidas da ferramenta.
 
 **Consequências:**  
-Quando as informações de versionamento estão incorretas, há entendimento equivocado sobre o funcionamento da ferramenta.
+Quando o versionamento não está correto, a DFDS se torna inutilizável para as versões disponíveis da ferramenta cujas versões na DFDS refletem a versão incorreta.
 
 **Exemplo de boa aplicação:**  
-Em [1], a versão indicada na DFDS corresponde à versão efetivamente documentada.
-
-**Imagem presente no PDF. Inserir aqui.**
+Na documentação da ferramenta Matplotlib as documentações de cada versão correspondem à versão correta da ferramenta.
 
 **Exemplo de aplicação ruim:**  
-Indicação de versão que não corresponde ao conteúdo apresentado na documentação.
+As documentações de exemplo não apresentam casos de incorreção para o versionamento da documentação. Na documentação da ferramenta Matplotlib seria uma incorreção caso a documentação da versão 3.9 fosse disponibilizada como a documentação da versão 3.8.1
 
 **Verificação:**  
-As informações de versionamento correspondem ao conteúdo documentado.
+Todas as documentações disponibilizadas são referentes apenas às versões disponíveis da ferramenta.
 
 ---
 
 #### 12.3 Relevância
-As informações de versionamento são consideradas relevantes quando auxiliam o leitor a identificar mudanças entre versões da ferramenta.
-
-**Consequências:**  
-Quando as informações de versionamento não são relevantes, o leitor pode ter dificuldade para identificar diferenças entre versões.
-
-**Exemplo de boa aplicação:**  
-Em [1], a DFDS indica claramente a versão e suas alterações principais.
-
-**Imagem presente no PDF. Inserir aqui.**
-
-**Exemplo de aplicação ruim:**  
-Indicação de versão sem qualquer informação adicional relevante.
-
-**Verificação:**  
-As informações de versionamento auxiliam na identificação de mudanças relevantes.
+A Relevância não afeta essa propriedade.
 
 ---
 
 #### 12.4 Contextualização
-As informações de versionamento são consideradas contextualizadas quando indicam claramente a qual versão do conteúdo da DFDS se referem.
+O versionamento é considerado contextualizado quando fica claro de qual versão é a documentação que está sendo apresentada durante todo o acesso.
 
 **Consequências:**  
-Quando não há contextualização, o leitor pode não saber se a informação ainda é válida.
+Quando o versionamento não está contextualizado, há falta de entendimento quanto à versão sendo consultada devido à falta de indicação sobre a versão da DFDS.
 
 **Exemplo de boa aplicação:**  
-Em [1], cada seção indica a versão à qual se aplica.
-
-**Imagem presente no PDF. Inserir aqui.**
+Na documentação da ferramenta Matplotlib no header da documentação está sempre exibida a versão da documentação sendo acessada.
 
 **Exemplo de aplicação ruim:**  
-Informações apresentadas sem indicação de versão correspondente.
+As documentações de exemplo não possuem caso de falta de contextualização de versionamento. Usando Na documentação da ferramenta Matplotlib de exemplo seria um caso de falta de contextualização se a versão da documentação sendo acessada fosse exibida apenas na página inicial.
 
 **Verificação:**  
-As informações de versionamento estão contextualizadas no conteúdo da DFDS.
+A versão apresentada da DFDS é visível durante todo o acesso à DFDS.
 
 ---
 
 ### Atributos de Apresentação
 
 #### 12.5 Boa legibilidade
-As informações de versionamento são consideradas legíveis quando estão apresentadas de forma clara e fácil de identificar.
-
-**Consequências:**  
-Quando as informações de versionamento não são legíveis, o leitor pode não perceber sua existência.
-
-**Exemplo de boa aplicação:**  
-Em [1], a versão está destacada visualmente.
-
-**Imagem presente no PDF. Inserir aqui.**
-
-**Exemplo de aplicação ruim:**  
-Informações de versão escondidas ou difíceis de localizar.
-
-**Verificação:**  
-As informações de versionamento são facilmente identificáveis.
+A Boa legibilidade não afeta essa propriedade.
 
 ---
 
 #### 12.6 Clareza
-As informações de versionamento são consideradas claras quando o leitor entende facilmente a que versão da ferramenta elas se referem.
+O versionamento é considerado claro quando fica explícito que existem diferentes versões da documentação disponíveis.
 
 **Consequências:**  
-Quando não há clareza, o leitor pode interpretar incorretamente o escopo da documentação.
+Quando o versionamento não está claro, há dificuldade para encontrar informações sobre uma versão da ferramenta devido à dificuldade de identificar que há diferentes versões da DFDS disponíveis.
 
 **Exemplo de boa aplicação:**  
-Em [1], a versão da ferramenta e da DFDS é explicitamente indicada.
+Na documentação da ferramenta Matplotlib a versão da documentação é exibida em uma caixa de seleção, deixando claro que é possível alterar a versão a qualquer momento:
 
-**Imagem presente no PDF. Inserir aqui.**
+![Screenshot](../imagens/img (111).png)
 
 **Exemplo de aplicação ruim:**  
-Uso de termos ambíguos para indicar versão.
+Na documentação da ferramenta PIL a versão da documentação é exibida, mas para alterá-la é necessário acessar a página “Release notes”:
+
+![Screenshot](../imagens/img (128).png)
 
 **Verificação:**  
-As informações de versionamento são apresentadas de forma clara.
+Todas as versões da documentação possuem um indicador de que existem outras versões disponíveis.
 
 ---
 
 #### 12.7 Estrutura organizada
-A apresentação das informações de versionamento é considerada organizada quando segue um padrão consistente ao longo da DFDS.
-
-**Consequências:**  
-Quando não há organização, o leitor pode ter dificuldade para localizar informações de versão.
-
-**Exemplo de boa aplicação:**  
-Em [1], as informações de versionamento seguem um padrão consistente.
-
-**Imagem presente no PDF. Inserir aqui.**
-
-**Exemplo de aplicação ruim:**  
-Informações de versão apresentadas de formas diferentes em seções distintas.
-
-**Verificação:**  
-As informações de versionamento seguem um padrão consistente.
+A Estrutura organizada não afeta essa propriedade.
