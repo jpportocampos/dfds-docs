@@ -464,10 +464,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#15-boa-legibilidade" class="md-nav__link">
+  <a href="#15-legibilidade" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.5 Boa legibilidade
+        1.5 Legibilidade
       
     </span>
   </a>
@@ -486,10 +486,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#17-estrutura-organizada" class="md-nav__link">
+  <a href="#17-organizacao-da-estrutura" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.7 Estrutura organizada
+        1.7 Organização da estrutura
       
     </span>
   </a>
@@ -981,10 +981,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#15-boa-legibilidade" class="md-nav__link">
+  <a href="#15-legibilidade" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.5 Boa legibilidade
+        1.5 Legibilidade
       
     </span>
   </a>
@@ -1003,10 +1003,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#17-estrutura-organizada" class="md-nav__link">
+  <a href="#17-organizacao-da-estrutura" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.7 Estrutura organizada
+        1.7 Organização da estrutura
       
     </span>
   </a>
@@ -1041,7 +1041,7 @@
 
 
 <h1 id="1-propriedade-descricao-dos-conceitos-da-ferramenta">1- Propriedade: Descrição dos conceitos da ferramenta<a class="headerlink" href="#1-propriedade-descricao-dos-conceitos-da-ferramenta" title="Permanent link">&para;</a></h1>
-<p>Propriedade de conteúdo. Descrição dos conceitos externos à ferramenta modelados por ela, explicando como estes conceitos são aplicados pela ferramenta.</p>
+<p>Descrição dos conceitos externos à ferramenta modelados por ela, explicando como estes conceitos são aplicados pela ferramenta.</p>
 <h2 id="pre-condicoes">Pré-Condições<a class="headerlink" href="#pre-condicoes" title="Permanent link">&para;</a></h2>
 <p>Essa propriedade só é aplicável quando se tem alguma funcionalidade da ferramenta que modela um conceito externo, ou seja, que existe além da ferramenta.</p>
 <h2 id="atributos">Atributos<a class="headerlink" href="#atributos" title="Permanent link">&para;</a></h2>
@@ -1051,16 +1051,16 @@
 <p><strong>Consequências:</strong><br />
 Quando a explicação conceitual não está completa, a DFDS não possui todas as informações necessárias para o entendimento da ferramenta devido à falta de informações sobre o domínio de aplicação dela.</p>
 <p><strong>Exemplo de boa aplicação:</strong><br />
-Na documentação da biblioteca Pillow (PIL Fork), uma biblioteca de manipulação de imagem, todos os conceitos utilizados estão descritos e podem ser encontrados na seção “Concepts” da documentação.</p>
+Na documentação da biblioteca Pillow (PIL Fork), uma biblioteca de manipulação de imagem, os conceitos utilizados estão descritos e podem ser encontrados na seção “Concepts” da documentação.</p>
 <p><strong>Exemplo de aplicação ruim:</strong><br />
-Na documentação da ferramenta Axios, uma biblioeca de cliente HTTP para o node.js, apesar de que na introdução da documentação é dito que a biblioteca é baseada em promessas, em nenhum ponto da documentação esse conceito é descrito.</p>
+Na documentação da ferramenta Pillow (PIL Fork), mesmo existindo a seção “Concepts”, caso algum conceito utilizado não fosse descrito, faltaria completude.</p>
 <p><strong>Verificação:</strong><br />
-Se para entender o uso de uma funcionalidade da ferramenta é necessário entender algum conceito externo à ferramenta, esse conceito deve ser explicado na DFDS.</p>
+Se para entender o uso de uma funcionalidade da ferramenta é necessário entender algum conceito externo à ferramenta, esse conceito deve ser definido na DFDS.</p>
 <hr />
 <h4 id="12-corretude">1.2 Corretude<a class="headerlink" href="#12-corretude" title="Permanent link">&para;</a></h4>
 <p>A descrição dos conceitos da ferramenta é considerada correta quando não apresenta erros conceituais. Ou seja, a descrição está de acordo com a definição formal do conceito modelado.</p>
 <p><strong>Consequências:</strong><br />
-Quando a explicação conceitual não está correta, a DFDS apresenta informações ambíguas ou equivocadas sobre o domínio da ferramenta devido à presença de informações equivocadas sobre o domínio de aplicação da ferramenta.</p>
+Quando a explicação conceitual não está correta, a DFDS apresenta informações ambíguas ou equivocadas sobre o domínio da ferramenta.</p>
 <p><strong>Exemplo de boa aplicação:</strong><br />
 Na documentação da biblioteca Pillow (PIL Fork), os conceitos estão descritos corretamente, seguindo a definição formal deles. Como exemplo, a definição de “Bands”:</p>
 <p><img alt="Screenshot" src="../../imagens/img%20%281%29.png" /></p>
@@ -1074,62 +1074,61 @@ As explicações conceituais devem estar de acordo com as definições formais d
 <p><strong>Consequências:</strong><br />
 Quando a explicação conceitual não é relevante, a informação é apresentada sem considerar o contexto de aplicação da ferramenta, criando uma dificuldade para atribuir o conceito à implementação.</p>
 <p><strong>Exemplo de boa aplicação:</strong><br />
-Na documentação da biblioteca Pillow (PIL Fork), a a definição de “Size” possui relevância por utilizar terminologias relacionadas a programação em Python, como “attribute” e “tuple”:</p>
-<p><img alt="Screenshot" src="../../imagens/img%20%283%29.png" /></p>
+Na documentação da biblioteca Pillow (PIL Fork), a a definição de  “Bands” possui relevância por definir este conceito de acordo com o seu uso conceitual na ferramenta. Isso é feito nas frases “The Python Imaging Library allows you to store several bands in a single image, provided they all have the same dimensions and depth. For example, a PNG image might have ‘R’, ‘G’, ‘B’, and ‘A’ bands for the red, green, blue, and alpha transparency values.”:</p>
+<p><img alt="Screenshot" src="../../imagens/img%20%281%29.png" /></p>
 <p><strong>Exemplo de aplicação ruim:</strong><br />
-As documentações de exemplo não possuem casos de falta de relevância nas explicações conceituais. Usando o exemplo anterior, caso a definição de Size não utilizasse terminologias relacionadas a programação em Python, faltaria relevância:</p>
-<p><img alt="Screenshot" src="../../imagens/img%20%284%29.png" /></p>
+As documentações de exemplo não possuem casos de falta de relevância nas explicações conceituais. Usando o exemplo anterior, caso a definição de “Bands” não utilizasse as frases destacadas no exemplo anterior, faltaria relevância.</p>
 <p><strong>Verificação:</strong><br />
 As explicações conceituais devem apresentar exemplos e vocabulário alinhados com casos reais de uso da ferramenta e utilizar terminologia relacionada com a situação ou cenário de aplicação da ferramenta.</p>
 <hr />
 <h4 id="14-contextualizacao">1.4 Contextualização<a class="headerlink" href="#14-contextualizacao" title="Permanent link">&para;</a></h4>
-<p>A descrição dos conceitos da ferramenta é considerada contextualizada quando fica claro qual funcionalidade da ferramenta modela o conceito. Ou seja, a descrição dos conceitos explicita quais funcionalidades da ferramenta utilizam o conceito descrito.</p>
+<p>A descrição dos conceitos da ferramenta é considerada contextualizada quando fica claro qual funcionalidade da ferramenta modela o conceito.</p>
 <p><strong>Consequências:</strong><br />
 Quando a explicação conceitual não está contextualizada, a informação sobre o domínio da ferramenta é apresentada sem indicar a funcionalidade relacionada a ela, deixando ambíguo o entendimento sobre como o conceito explicado é utilizado pela ferramenta.</p>
 <p><strong>Exemplo de boa aplicação:</strong><br />
-Na documentação da biblioteca PIL, a definição de Bands explicita qual funcionalidade (nesse caso, um método) utiliza o conceito explicado na última frase:</p>
+Na documentação da biblioteca PIL, a definição de Bands explicita, na última frase, qual funcionalidade (nesse caso, um método) utiliza esse conceito:</p>
 <p><img alt="Screenshot" src="../../imagens/img%20%281%29.png" /></p>
 <p><strong>Exemplo de aplicação ruim:</strong><br />
 As documentações de exemplo não possuem casos de falta de contextualização nas explicações conceituais. Utilizando o exemplo acima, caso a última frase da definição de Bands fosse removida, não haveria contextualização:</p>
 <p><img alt="Screenshot" src="../../imagens/img%20%281%29%20crop.png" /></p>
 <p><strong>Verificação:</strong><br />
-As explicações conceituais explicitam quais funcionalidades utilizam os conceitos explicados.</p>
+As explicações conceituais devem estar diretamente relacionadas com funcionalidades da ferramenta.</p>
 <hr />
 <h3 id="atributos-de-apresentacao">Atributos de Apresentação<a class="headerlink" href="#atributos-de-apresentacao" title="Permanent link">&para;</a></h3>
-<h4 id="15-boa-legibilidade">1.5 Boa legibilidade<a class="headerlink" href="#15-boa-legibilidade" title="Permanent link">&para;</a></h4>
-<p>A descrição dos conceitos da ferramenta é considerada com boa legibilidade quando seu texto está bem escrito (fácil de entender) e não possui erros gramaticais.</p>
+<h4 id="15-legibilidade">1.5 Legibilidade<a class="headerlink" href="#15-legibilidade" title="Permanent link">&para;</a></h4>
+<p>A descrição dos conceitos da ferramenta é considerada como tendo boa legibilidade quando seu texto está bem escrito (utiliza fontes legíveis, bom contraste, parágrafos curtos, frases diretas, voz ativa) e não possui erros gramaticais.</p>
 <p><strong>Consequências:</strong><br />
 Quando a explicação conceitual não está com boa legibilidade, a informação sobre o conceito se torna difícil de compreender devido a dificuldade de leitura da explicação.</p>
 <p><strong>Exemplo de boa aplicação:</strong><br />
-Na documentação da biblioteca PIL, as descrições conceituais possuem textos bem escritos e não apresentam erros de gramática:</p>
+Na documentação da biblioteca PIL, as descrições conceituais possuem textos com fontes legíveis, bom contraste, parágrafos curtos, frases diretas, voz ativa e não apresentam erros de gramática:</p>
 <p><img alt="Screenshot" src="../../imagens/img%20%285%29.png" /></p>
 <p><strong>Exemplo de aplicação ruim:</strong><br />
-As documentações de exemplo não possuem casos de legibilidade ruim. Utilizando o exemplo acima, seria um caso de legibilidade ruim caso o texto de “Coordinate system” apresentasse erros gramaticais e frases mal escritas.</p>
+As documentações de exemplo não possuem casos de legibilidade ruim. Utilizando o exemplo acima, seria um caso de legibilidade ruim caso o texto de “Coordinate system” apresentasse erros gramaticais e frases mal escritas:</p>
+<p><img alt="Screenshot" src="../../imagens/img%20%28129%29.png" /></p>
 <p><strong>Verificação:</strong><br />
 Os textos dos conceitos modelados são bem escritos e não apresentam erros gramaticais.</p>
 <hr />
 <h4 id="16-clareza">1.6 Clareza<a class="headerlink" href="#16-clareza" title="Permanent link">&para;</a></h4>
-<p>A descrição dos conceitos da ferramenta é considerada clara quando é explicitado que o texto apresentado é uma explicação conceitual que se refere a um conceito externo à ferramenta.</p>
+<p>A descrição dos conceitos da ferramenta é considerada clara quando é explicitado para o leitor que o texto apresentado é uma explicação conceitual.</p>
 <p><strong>Consequências:</strong><br />
 Quando a explicação conceitual não está clara, há dificuldade para perceber que o texto apresenta uma explicação conceitual, dificultando o entendimento da ferramenta.</p>
 <p><strong>Exemplo de boa aplicação:</strong><br />
 Na documentação da biblioteca PIL, as definições de conceitos ficam em uma seção de nome “Concepts”, explicitando que o texto dessa seção é de definições conceituais:</p>
 <p><img alt="Screenshot" src="../../imagens/img%20%287%29.png" /></p>
 <p><strong>Exemplo de aplicação ruim:</strong><br />
-Na documentação da ferramenta Axios, na introdução, o conceito de “isomórfico” é explicado rapidamente entre parênteses e sem nenhuma indicação que é uma explicação conceitual:</p>
-<p><img alt="Screenshot" src="../../imagens/img.png" /></p>
+Na documentação da biblioteca scikit-learn, na seção “Linear Models”, as descrições de conceitos e de funcionalidades estão misturados sem nenhuma indicação qual parte do texto é uma explicação conceitual</p>
 <p><strong>Verificação:</strong><br />
 As explicações conceituais explicitam que seu texto é uma explicação conceitual.</p>
 <hr />
-<h4 id="17-estrutura-organizada">1.7 Estrutura organizada<a class="headerlink" href="#17-estrutura-organizada" title="Permanent link">&para;</a></h4>
-<p>A descrição dos conceitos da ferramenta é considerada organizada estruturalmente quando existe uma estrutura padrão para todas as explicações conceituais. Ou seja, todas as explicações de conceito estão estruturadas da mesma forma em toda a DFDS.</p>
+<h4 id="17-organizacao-da-estrutura">1.7 Organização da estrutura<a class="headerlink" href="#17-organizacao-da-estrutura" title="Permanent link">&para;</a></h4>
+<p>A descrição dos conceitos da ferramenta é considerada organizada estruturalmente quando existe uma estrutura padrão para todas as explicações conceituais. Ou seja, todas as explicações de conceito possuem um mesmo padrão de formatação em seu texto em toda a DFDS.</p>
 <p><strong>Consequências:</strong><br />
-Quando a explicação conceitual não está organizada estruturalmente, há dificuldade para encontrar informações sobre o domínio da ferramenta devido à dificuldade de identificar o texto que se refere a esse conteúdo.</p>
+Quando a explicação conceitual não está organizada estruturalmente, há dificuldade para encontrar informações sobre os conceitos da ferramenta devido à diferença de formatação entre diferentes textos de explicações conceituais.</p>
 <p><strong>Exemplo de boa aplicação:</strong><br />
 Na documentação da biblioteca PIL, as definições conceituais seguem um mesmo padrão de formatação:</p>
 <p><img alt="Screenshot" src="../../imagens/img%20%2811%29.png" /></p>
 <p><strong>Exemplo de aplicação ruim:</strong><br />
-Na documentação da biblioteca Matplotlib, as definições conceituais estão em diferentes formatações. No primeiro print, a explicação conceitual é apresentada junto com explicações de funcionalidades, no segundo de forma independente:</p>
+Na documentação da biblioteca Matplotlib, as definições conceituais estão em diferentes formatações. Na primeira imagem, a explicação conceitual é apresentada junto com explicações de funcionalidades, na segunda não há nenhuma explicação de funcionalidade, levando a dois padrões diferentes de apresentação do conceito:</p>
 <p><img alt="Screenshot" src="../../imagens/img%20%28113%29.png" /></p>
 <p><img alt="Screenshot" src="../../imagens/img%20%28114%29.png" /></p>
 <p><strong>Verificação:</strong><br />

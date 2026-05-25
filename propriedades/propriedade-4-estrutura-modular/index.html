@@ -559,10 +559,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#45-boa-legibilidade" class="md-nav__link">
+  <a href="#45-legibilidade" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.5 Boa legibilidade
+        4.5 Legibilidade
       
     </span>
   </a>
@@ -581,10 +581,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#47-estrutura-organizada" class="md-nav__link">
+  <a href="#47-organizacao-da-estrutura" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.7 Estrutura organizada
+        4.7 Organização da estrutura
       
     </span>
   </a>
@@ -1003,10 +1003,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#45-boa-legibilidade" class="md-nav__link">
+  <a href="#45-legibilidade" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.5 Boa legibilidade
+        4.5 Legibilidade
       
     </span>
   </a>
@@ -1025,10 +1025,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#47-estrutura-organizada" class="md-nav__link">
+  <a href="#47-organizacao-da-estrutura" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.7 Estrutura organizada
+        4.7 Organização da estrutura
       
     </span>
   </a>
@@ -1063,11 +1063,11 @@
 
 
 <h1 id="4-propriedade-estrutura-modular">4- Propriedade: Estrutura modular<a class="headerlink" href="#4-propriedade-estrutura-modular" title="Permanent link">&para;</a></h1>
-<p>Propriedade de apresentação e estrutura. O conteúdo é separado em seções curtas e autônomas.</p>
+<p>O conteúdo é separado em seções curtas e autônomas.</p>
 <h2 id="pre-condicoes">Pré-Condições<a class="headerlink" href="#pre-condicoes" title="Permanent link">&para;</a></h2>
 <p>Essa propriedade só é aplicável quando o conteúdo a ser documentado pode ser organizado em seções autônomas.</p>
 <h2 id="observacao">OBSERVAÇÃO<a class="headerlink" href="#observacao" title="Permanent link">&para;</a></h2>
-<p>Essa propriedade facilita o uso da DFDS por desenvolvedores que buscam apenas consultar a documentação para realizar tarefas específicas. O recomendado é combinar essa propriedade com a 5 (Estrutura linear), organizando as seções modulares em uma ordem específica de leitura.</p>
+<p>Essa propriedade facilita o uso de desenvolvedores que buscam apenas consultar a documentação para realizar tarefas específicas. O recomendado é combinar essa propriedade com a 5 (Estrutura linear), organizando as seções modulares em uma ordem específica de leitura.</p>
 <h2 id="atributos">Atributos<a class="headerlink" href="#atributos" title="Permanent link">&para;</a></h2>
 <h3 id="atributos-de-conteudo">Atributos de Conteúdo<a class="headerlink" href="#atributos-de-conteudo" title="Permanent link">&para;</a></h3>
 <h4 id="41-completude">4.1 Completude<a class="headerlink" href="#41-completude" title="Permanent link">&para;</a></h4>
@@ -1075,9 +1075,11 @@
 <p><strong>Consequências:</strong><br />
 Quando a estrutura modular não está completa, há dificuldade para encontrar informações sobre tópicos específicos da ferramenta porque as seções não cobrem todo o conteúdo da DFDS.</p>
 <p><strong>Exemplo de boa aplicação:</strong><br />
-Na documentação da ferramenta PIL todo o conteúdo é dividido em páginas e cada página contém módulos autônomos.</p>
+Na documentação da ferramenta PIL todo o conteúdo é dividido em páginas e cada página contém módulos autônomos:</p>
+<p><img alt="Screenshot" src="../../imagens/img%20%28132%29.png" /></p>
 <p><strong>Exemplo de aplicação ruim:</strong><br />
-Nas documentações de exemplo, o conteúdo está estruturado em seções modulares, ao acessar o github da ferramenta Axios, há uma versão não modularizada da documentação em um arquivo README.md. Caso essa fosse a única documentação da ferramenta, seria uma aplicação ruim.</p>
+Na documentação da ferramenta express, a documentação está em um formato totalmente linear, precisando passar de página em página para prosseguir nela:</p>
+<p><img alt="Screenshot" src="../../imagens/img%20%28131%29.png" /></p>
 <p><strong>Verificação:</strong><br />
 Todos os tópicos da ferramenta estão estruturados em seções modulares na DFDS.</p>
 <hr />
@@ -1086,10 +1088,11 @@ Todos os tópicos da ferramenta estão estruturados em seções modulares na DFD
 <p><strong>Consequências:</strong><br />
 Quando a estrutura modular não está correta, a falta de autonomia das seções faz com que estas sejam muito longas ou com conteúdo incompleto para o entendimento.</p>
 <p><strong>Exemplo de boa aplicação:</strong><br />
-Em [1], no módulo de conceitos, as funcionalidades utilizadas são referenciadas com os nomes dos módulos e seções referenciados, no seguinte exemplo, isso ocorre na última frase:</p>
+Na documentação da ferramenta PIL, no módulo de conceitos, as funcionalidades utilizadas são referenciadas com os nomes dos módulos e seções referenciados, no seguinte exemplo, isso ocorre na última frase:</p>
 <p><img alt="Screenshot" src="../../imagens/img%20%2846%29.png" /></p>
 <p><strong>Exemplo de aplicação ruim:</strong><br />
-Caso o exemplo anterior não tivesse a última frase, a modularização estaria incorreta.</p>
+Caso o exemplo anterior não tivesse a referência, a modularização estaria incorreta:</p>
+<p><img alt="Screenshot" src="../../imagens/img%20%28133%29.png" /></p>
 <p><strong>Verificação:</strong><br />
 Todas as seções modulares da DFDS que possuem assuntos em comum se referenciam.</p>
 <hr />
@@ -1100,7 +1103,8 @@ Quando a estrutura modular não está relevante, há uma dificuldade de encontra
 <p><strong>Exemplo de boa aplicação:</strong><br />
 As páginas e módulos na documentação da ferramenta Matplotlib estão separados de acordo com o uso de cada funcionalidade, facilitando a consulta de informações relevantes.</p>
 <p><strong>Exemplo de aplicação ruim:</strong><br />
-Na documentação da ferramenta Axios um dos módulos iniciais é sobre Requisições POST e não existem módulos sobre as outras requisições HTTP utilizadas pela ferramenta.</p>
+Na documentação da ferramenta Express, na documentação da API, os módulos são separados por funcionalidade e não por uso:</p>
+<p><img alt="Screenshot" src="../../imagens/img%20%28134%29.png" /></p>
 <p><strong>Verificação:</strong><br />
 Os tópicos da ferramenta foram organizados em seções modulares de acordo com cenários reais de uso da ferramenta.</p>
 <hr />
@@ -1111,21 +1115,22 @@ Quando a estrutura modular não está contextualizada, há dificuldade para enco
 <p><strong>Exemplo de boa aplicação:</strong><br />
 Os títulos das seções e páginas na documentação da ferramenta PIL deixam claro qual tópico será coberto em cada um dos módulos.</p>
 <p><strong>Exemplo de aplicação ruim:</strong><br />
-Na documentação da ferramenta Axios, o módulo “Exemplos” possui nome que sugere que será um módulo com exemplos de uso da ferramenta, mas essa seção possui apenas uma explicação de como configurar a ferramenta para um ambiente específico de programação.</p>
+Na documentação da ferramenta Express, o módulo “Exemplos”, na documentação da API, os nomes dos módulos não contextualizam o que será coberto por eles:</p>
+<p><img alt="Screenshot" src="../../imagens/img%20%28135%29.png" /></p>
 <p><strong>Verificação:</strong><br />
 Todas as seções da DFDS possuem título e um trecho curto que indicam o conteúdo presente nelas.</p>
 <hr />
 <h3 id="atributos-de-apresentacao">Atributos de Apresentação<a class="headerlink" href="#atributos-de-apresentacao" title="Permanent link">&para;</a></h3>
-<h4 id="45-boa-legibilidade">4.5 Boa legibilidade<a class="headerlink" href="#45-boa-legibilidade" title="Permanent link">&para;</a></h4>
-<p>A estrutura modular da DFDS é considerada com boa legibilidade quando o texto que descreve as seções está bem escrito (fácil de entender) e não possui erros gramaticais.</p>
+<h4 id="45-legibilidade">4.5 Legibilidade<a class="headerlink" href="#45-legibilidade" title="Permanent link">&para;</a></h4>
+<p>A estrutura modular da DFDS é considerada com boa legibilidade quando o texto que descreve as seções está bem escrito (utiliza fontes claras, parágrafos curtos, frases diretas e bom contraste) e não possui erros gramaticais.</p>
 <p><strong>Consequências:</strong><br />
 Quando a estrutura modular não está com boa legibilidade, há dificuldade com o entendimento da seção devido a dificuldade de leitura do texto de introdução.</p>
 <p><strong>Exemplo de boa aplicação:</strong><br />
-Os trechos introdutórios na documentação da ferramenta Axios estão bem escritos e não apresentam erros de gramática:</p>
-<p><img alt="Screenshot" src="../../imagens/img%20%2850%29.png" /></p>
+Os trechos introdutórios na documentação da ferramenta scikit-learn estão bem escritos e não apresentam erros de gramática:</p>
+<p><img alt="Screenshot" src="../../imagens/img%20%28136%29.png" /></p>
 <p><strong>Exemplo de aplicação ruim:</strong><br />
 As documentações de exemplo não possuem seções com legibilidade ruim, porém, se o exemplo usado anteriormente fosse mal escrito, seria:</p>
-<p><img alt="Screenshot" src="../../imagens/img%20%2851%29.png" /></p>
+<p><img alt="Screenshot" src="../../imagens/img%20%28137%29.png" /></p>
 <p><strong>Verificação:</strong><br />
 Todos os trechos de contextualização das seções modulares da DFDS possuem texto bem escrito e não apresentam erros gramaticais em seu texto.</p>
 <hr />
@@ -1140,14 +1145,14 @@ Caso as documentações fossem hospedadas em uma única página e não houvesse 
 <p><strong>Verificação:</strong><br />
 Todas as seções modulares da DFDS são apresentadas com separações umas das outras e com títulos e subtítulos em seu conteúdo.</p>
 <hr />
-<h4 id="47-estrutura-organizada">4.7 Estrutura organizada<a class="headerlink" href="#47-estrutura-organizada" title="Permanent link">&para;</a></h4>
+<h4 id="47-organizacao-da-estrutura">4.7 Organização da estrutura<a class="headerlink" href="#47-organizacao-da-estrutura" title="Permanent link">&para;</a></h4>
 <p>A estrutura modular da DFDS é considerada organizada estruturalmente quando existe uma estrutura padrão para as seções modulares. Ou seja, todas as seções estão estruturadas da mesma forma em toda a DFDS.</p>
 <p><strong>Consequências:</strong><br />
 Quando a estrutura modular não está organizada estruturalmente, há dificuldade dificuldade de navegação na documentação devido à falta de organização das seções.</p>
 <p><strong>Exemplo de boa aplicação:</strong><br />
 Os módulos da documentação da ferramenta PIL seguem uma mesma estrutura e formatação para títulos, subtítulos e exemplos.</p>
 <p><strong>Exemplo de aplicação ruim:</strong><br />
-Na documentação da ferrmenta Axios os módulos possuem mesma formatação, mas a organização de título, subtítulo e exemplo é diferente em cada seção.</p>
+Caso na documentação da ferramenta PIL a organização de título, subtítulo e exemplo fosse diferente em cada seção, seria uma estrutura modular desorganizada estruturalmente.</p>
 <p><strong>Verificação:</strong><br />
 Todas as seções da DFDS possuem a mesma estrutura.</p>
 
