@@ -1,6 +1,6 @@
 # 12- Propriedade: Versionamento
 
-Propriedade de uso. As documentações das diferentes versões disponíveis e mantidas da ferramenta estão disponíveis.
+As documentações das diferentes versões disponíveis e mantidas da ferramenta estão disponíveis.
 
 ## Pré-Condições
 Essa propriedade só é aplicável quando a ferramenta possui mais de uma versão disponível e mantida para uso.
@@ -13,7 +13,7 @@ Essa propriedade só é aplicável quando a ferramenta possui mais de uma versã
 O versionamento é considerado completo quando as documentações de todas as versões da ferramenta estão disponíveis para os desenvolvedores.
 
 **Consequências:**  
-Quando o versionamento não está completo, a DFDS se torna inutilizável para desenvolvedores que desejam utilizar as versões que não possuem sua versão contemplada na DFDS.
+Quando o versionamento não está completo, o uso de determinada versão da ferramenta fica prejudicado, uma vez que não existe uma DFDS para aquela versão.
 
 **Exemplo de boa aplicação:**  
 Na documentação da ferramenta Matplotlib todas as versões mantidas e disponíveis da biblioteca possuem documentação:
@@ -21,9 +21,9 @@ Na documentação da ferramenta Matplotlib todas as versões mantidas e disponí
 ![Screenshot](../imagens/img (108).png)
 
 **Exemplo de aplicação ruim:**  
-Na documentação da ferramenta Axios apenas uma documentação está disponível, porém existe mais de uma versão da ferramenta disponível para uso:
+Na documentação da ferramenta PIL apenas uma documentação está disponível, porém existe mais de uma versão da ferramenta disponível para uso:
 
-![Screenshot](../imagens/img (109).png)
+![Screenshot](../imagens/img (139).png)
 
 **Verificação:**  
 Todas as versões mantidas e disponíveis da ferramenta possuem documentação disponível para uso.
@@ -34,7 +34,7 @@ Todas as versões mantidas e disponíveis da ferramenta possuem documentação d
 O versionamento é considerado correto quando as documentações disponíveis são referentes às versões disponíveis e mantidas da ferramenta.
 
 **Consequências:**  
-Quando o versionamento não está correto, a DFDS se torna inutilizável para as versões disponíveis da ferramenta cujas versões na DFDS refletem a versão incorreta.
+Quando o versionamento não está correto, o uso de determinada versão da ferramenta fica prejudicado, uma vez que a DFDS não reflete as funcionalidades implementadas naquela versão da ferramenta.
 
 **Exemplo de boa aplicação:**  
 Na documentação da ferramenta Matplotlib as documentações de cada versão correspondem à versão correta da ferramenta.
@@ -71,8 +71,8 @@ A versão apresentada da DFDS é visível durante todo o acesso à DFDS.
 
 ### Atributos de Apresentação
 
-#### 12.5 Boa legibilidade
-A Boa legibilidade não afeta essa propriedade.
+#### 12.5 Legibilidade
+A Legibilidade não afeta essa propriedade.
 
 ---
 
@@ -97,5 +97,5 @@ Todas as versões da documentação possuem um indicador de que existem outras v
 
 ---
 
-#### 12.7 Estrutura organizada
-A Estrutura organizada não afeta essa propriedade.
+#### 12.7 Organização da estrutura
+A Organização da estrutura não afeta essa propriedade.

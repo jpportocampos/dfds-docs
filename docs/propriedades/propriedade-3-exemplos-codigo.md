@@ -1,6 +1,6 @@
 # 3- Propriedade: Exemplos e fragmentos de código
 
-Propriedade de conteúdo. Trechos de código utilizados para demonstrar o uso de uma ou mais funcionalidades da ferramenta.
+Trechos de código utilizados para demonstrar o uso de uma ou mais funcionalidades da ferramenta.
 
 ## Pré-Condições
 Essa propriedade só é aplicável quando se tem alguma funcionalidade da ferramenta que pode ser apresentada em exemplos de código.
@@ -21,7 +21,7 @@ Na documentação da ferramenta PIL, o seguinte exemplo de código está complet
 ![Screenshot](../imagens/img (31).png)
 
 **Exemplo de aplicação ruim:**  
-As dcumentações de exemplo não possuem casos de incompletude em exemplos de código. Usando o exemplo anterior, caso o import não estivesse presente no exemplo de código, ele estaria incompleto.
+As documentações de exemplo não possuem casos de incompletude em exemplos de código. Usando o exemplo anterior, caso o import não estivesse presente no exemplo de código, ele estaria incompleto.
 
 **Verificação:**  
 Todos os elementos de código presentes nos exemplos de código estão inicializados ou contextualizados por comentários.
@@ -43,7 +43,7 @@ Na documentação da ferramenta PIL, o seguinte exemplo de código está correto
 As documentações de exemplo não apresentam casos de exemplos de código incorretos. Usando o exemplo anterior, caso houvesse nele um erro de sintaxe, como utilizar “;” ao invés de “,” na definição da variável “size”, ele estaria incorreto.
 
 **Verificação:**  
-Todos os exemplos de código apresentam código sem erros de sintaxe e que, ao copiar e colar em um ambiente devidamente configurado, o código compila sem apresentar erros e o resultado da compilação é igual ao apontado na DFDS.
+Todos os exemplos de código apresentam código sem erros de sintaxe e que, ao copiar e colar em um ambiente devidamente configurado, o código compila sem apresentar erros e o resultado da compilação é igual ao apontado pelo exemplo.
 
 ---
 
@@ -91,8 +91,8 @@ Todos os exemplos de código possuem algum elemento (comentário, nome de funç�
 
 ### Atributos de Apresentação
 
-#### 3.5 Boa legibilidade
-Um exemplo de código é considerado com boa legibilidade quando seu código está bem escrito (fácil de entender) e as nomenclaturas de variáveis e funções estão de acordo com boas práticas.
+#### 3.5 Legibilidade
+Um exemplo de código é considerado com boa legibilidade quando seu código está bem escrito (utiliza fontes claras, parágrafos curtos, frases diretas e bom contraste) e as nomenclaturas de variáveis e funções estão de acordo com boas práticas.
 
 **Consequências:**  
 Quando um exemplo de código não está com boa legibilidade, o entendimento do exemplo de código é prejudicado devido a dificuldade de leitura do código no exemplo.
@@ -103,12 +103,12 @@ Na documentação da biblioteca PIL os exemplos apresentam boa legibilidade pois
 ![Screenshot](../imagens/img (38).png)
 
 **Exemplo de aplicação ruim:**  
-As documentações de exemplo não apresentam casos de exemplos de código com legibilidade ruim. Usando o exemplo anterior, o código teria legibilidade ruim caso fosse exrito da seguinte forma:
+As documentações de exemplo não apresentam casos de exemplos de código com legibilidade ruim. Usando o exemplo anterior, o código teria legibilidade ruim caso fosse escrito da seguinte forma:
 
 ![Screenshot](../imagens/img (39).png)
 
 **Verificação:**  
-Todos os elementos de código dos exemplos de código apresentam boas práticas em suas nomenclaturas e o código está bem escrito.
+Todos os elementos de código dos exemplos de código apresentam boas práticas em suas nomenclaturas e o código está bem escrito
 
 ---
 
@@ -133,8 +133,8 @@ Todos os exemplos de código possuem alguma indicação de qual funcionalidade e
 
 ---
 
-#### 3.7 Estrutura organizada
-Um exemplo de código é considerado organizada estruturalmente quando existe uma estrutura padrão e específica para código para todos os exemplos de código. Ou seja, todos os exemplos de código estão estruturados da mesma forma em toda a DFDS.
+#### 3.7 Organização da estrutura
+Um exemplo de código é considerado organizadoa estruturalmente quando existe uma estrutura padrão e específica para código para todos os exemplos de código. Ou seja, todos os exemplos de código estão estruturados da mesma forma em toda a DFDS.
 
 **Consequências:**  
 Quando um exemplo de código não está organizado estruturalmente, há dificuldade para encontrar informações sobre o uso das funcionalidades da ferramenta devido à dificuldade de identificar os exemplos de código.

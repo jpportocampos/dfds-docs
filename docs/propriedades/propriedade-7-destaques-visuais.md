@@ -1,6 +1,6 @@
 # 7- Propriedade: Destaques visuais
 
-Propriedade de apresentação e estrutura. Utilização de elementos de destaque na documentação para apresentar informações importantes para o desenvolvedor.
+Utilização de elementos de destaque na documentação para apresentar informações importantes para o desenvolvedor.
 
 ## Pré-Condições
 Essa propriedade só é aplicável quando é necessário atentar o desenvolvedor para um conteúdo da documentação sem a necessidade do desenvolvedor acessar outra parte da DFDS.
@@ -47,12 +47,12 @@ As documentações não apresentam destaques visuais incorretos. Usando o exempl
 ![Screenshot](../imagens/img (64).png)
 
 **Verificação:**  
-O texto dos destaques visuais apresentam explicações corretas de acordo com o conteúdo referenciado.
+As explicações dos destaques visuais apresentam explicações de acordo com o conteúdo referenciado.
 
 ---
 
 #### 7.3 Relevância
-Os destaques visuais são considerados relevantes quando as explicações apresentadas seguem as regras de relevância do conteúdo apresentado (verificar 1.3 para explicações conceituais e 2.3 para cobertura funcional)
+Os destaques visuais são considerados relevantes quando as explicações apresentadas seguem as regras de relevância do conteúdo apresentado (verificar 1.3 para explicações conceituais e 2.3 para explicação funcional)
 
 ---
 
@@ -77,13 +77,13 @@ Todos os elementos de destaque estão localizados junto ao conteúdo referenciad
 
 ### Atributos de Apresentação
 
-#### 7.5 Boa legibilidade
-Os destaques visuais são considerados com boa legibilidade quando as explicações apresentadas seguem as regras de boa legibilidade do conteúdo apresentado (verificar 1.5 para explicações conceituais e 2.5 para cobertura funcional)
+#### 7.5 Legibilidade
+Os destaques visuais são considerados com boa legibilidade quando as explicações apresentadas seguem as regras de boa legibilidade do conteúdo apresentado (verificar 1.5 para explicações conceituais e 2.5 para explicação funcional)
 
 ---
 
 #### 7.6 Clareza
-Os destaques visuais são considerados claros quando fica explícito qual é o tipo de conteúdo referenciado
+Os destaques visuais são considerados claros quando fica explícito qual é o tipo de conteúdo referenciado.
 
 **Consequências:**  
 Quando os destaques visuais não estão claros, há dificuldade no entendimento da informação destacada devido à dificuldade de identificar que tipo de conteúdo está presente no elemento de destaque.
@@ -103,7 +103,7 @@ Todas as explicações nos elementos de destaque possuem em seu texto ou título
 
 ---
 
-#### 7.7 Estrutura organizada
+#### 7.7 Organização da estrutura
 Os destaques visuais da DFDS são considerados organizados estruturalmente quando os elementos de destaque utilizados são do mesmo tipo e formatação em toda a documentação.
 
 **Consequências:**  
@@ -113,11 +113,7 @@ Quando os destaques visuais não estão organizados estruturalmente, há falta d
 Na documentação da ferramenta PIL todos os elementos de destaque são do mesmo tipo e de mesma formatação, alterando apenas a cor para avisos.
 
 **Exemplo de aplicação ruim:**  
-Na documentação da ferramenta Axios os elementos de destaque, no caso notas, possuem formatações diferentes em partes diferentes da documentação, com e sem o título “Nota”:
-
-![Screenshot](../imagens/img (68).png)
-
-![Screenshot](../imagens/img (69).png)
+Na documentação da ferramenta PIL, caso os elementos de destaque possuíssem formatações diferentes em partes diferentes da documentação (com e sem o título “Nota”, por exemplo) seriam destaques visuais desorganizados estruturalmente.
 
 **Verificação:**  
-Todos os elementos de destaque utilizados são do mesmo tipo e com a mesma formatação.
+Todos os elementos de destaque utilizados são do mesmo tipo e possuem a mesma formatação.

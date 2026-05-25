@@ -1,9 +1,6 @@
 # 13- Atributo: Atualização
 
-Atributo de conteúdo. A DFDS é atualizada em conjunto com a ferramenta, impedindo que informações erradas (desatualizadas) sejam transmitidas para o desenvolvedor.
-
-## Pré-Condições
-Esse atributo só é aplicável quando a ferramenta passa por uma atualização que altera sua forma de uso.
+A DFDS é atualizada em conjunto com a ferramenta, impedindo que informações erradas (desatualizadas) sejam transmitidas para o desenvolvedor.
 
 #### Definição
 A DFDS é considerada atualizada quando, ao atualizar a ferramenta, todas as alterações são incorporadas na DFDS. Ou seja, as Regras descritas anteriormente são revisitadas para garantir que não existe nenhuma inconsistência na DFDS em relação à ferramenta atualizada.

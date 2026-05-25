@@ -1,6 +1,6 @@
 # 6- Propriedade: Referências conceituais em comentários de código
 
-Propriedade de apresentação e estrutura. Os conceitos modelados pela ferramenta são referenciados nos exemplos de código através de comentários de código.
+Os conceitos modelados pela ferramenta são referenciados nos exemplos de código através de comentários de código.
 
 ## Pré-Condições
 Essa propriedade só é aplicável quando já existe uma explicação conceitual (Regra 1) e um exemplo de código (Regra 3) da funcionalidade que usa o conceito documentado.
@@ -79,8 +79,8 @@ Os comentários de referências conceituais estão posicionados de acordo com a 
 
 ### Atributos de Apresentação
 
-#### 6.5 Boa legibilidade
-As referências conceituais em comentários de código são consideradas com boa legibilidade quando os comentários estão bem escritos (fácil de entender).
+#### 6.5 Legibilidade
+As referências conceituais em comentários de código são consideradas com boa legibilidade quando os comentários estão bem escritos (utiliza fontes claras, parágrafos curtos, frases diretas e bom contraste).
 
 **Consequências:**  
 Quando as referências conceituais em comentários de código não estão com boa legibilidade, há dificuldade no entendimento da referência feita devido a dificuldade de leitura das referências.
@@ -121,5 +121,5 @@ Todos os comentários de referências conceituais possuem em seu texto o nome do
 
 ---
 
-#### 6.7 Estrutura organizada
+#### 6.7 Organização da estrutura
 Verificar 3.7

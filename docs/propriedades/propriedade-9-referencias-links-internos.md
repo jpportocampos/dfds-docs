@@ -1,6 +1,6 @@
 # 9- Propriedade: Referências e links internos
 
-Propriedade de conteúdo. Utilização de links internos para facilitar navegação. Links internos conectam seções com conceitos ou funcionalidades em comum.
+Utilização de links internos para facilitar navegação. Links internos conectam seções com conceitos ou funcionalidades em comum.
 
 ## Pré-Condições
 Essa propriedade só é aplicável quando se tem seções que possuam conceitos ou funcionalidades em comum
@@ -21,9 +21,7 @@ Na documentação da ferramenta PIL as funcionalidades e conceitos mencionados e
 ![Screenshot](../imagens/img (79).png)
 
 **Exemplo de aplicação ruim:**  
-Na documentação da ferramenta Axios as funcionalidades mencionadas, apesar de estarem com formatação diferente, não possuem links para suas respectivas definições:
-
-![Screenshot](../imagens/img (80).png)
+Na documentação da ferramenta PIL caso as funcionalidades não possuíssem links para as respectivas páginas, haveria incompletude.
 
 **Verificação:**  
 Todas as seções na DFDS que possuem conceitos ou funcionalidades em comum possuem links internos entre si.
@@ -81,8 +79,8 @@ Todas as referências e links internos explicitam para quais conteúdos as refer
 
 ### Atributos de Apresentação
 
-#### 9.5 Boa legibilidade
-As referências e links internos da ferramenta são considerados com boa legibilidade quando o texto que possui o link interno está bem escrito (fácil de entender) e não possui erros gramaticais.
+#### 9.5 Legibilidade
+As referências e links internos da ferramenta são considerados com boa legibilidade quando o texto que possui o link interno está bem escrito (utiliza fontes claras, parágrafos curtos, frases diretas e bom contraste) e não possui erros gramaticais.
 
 **Consequências:**  
 Quando as referências e links internos não estão com boa legibilidade, há dificuldade no entendimento sobre a relação entre as seções linkadas devido a dificuldade de leitura dos links.
@@ -119,7 +117,7 @@ Todas as referências e links internos possuem formatação de link.
 
 ---
 
-#### 9.7 Estrutura organizada
+#### 9.7 Organização da estrutura
 As referências e links são considerados organizados estruturalmente quando a formatação de link utilizada é a mesma para todos os links de mesmo tipo de conteúdo.
 
 **Consequências:**  

@@ -1,6 +1,6 @@
 # 10- Propriedade: Referências e links externos
 
-Propriedade de conteúdo. Utilização de links externos para explicações mais detalhadas de conceitos externos. Links externos são usados para referências a conceitos externos além da modelagem da ferramenta.
+Utilização de links externos para explicações mais detalhadas de conceitos externos. Links externos são usados para referências a conceitos externos além da modelagem da ferramenta.
 
 ## Pré-Condições
 Essa propriedade só é aplicável quando existem conceitos externos à ferramenta que podem necessitar de explicações mais completas, porém que fogem do escopo da DFDS.
@@ -19,16 +19,10 @@ As referências e links externos são considerados completos quando todos os con
 Quando as referências e links externos não estão completos, há dificuldade de compreensão de um conceito mais complexo devido à falta de links.
 
 **Exemplo de boa aplicação:**  
-Na documentação da ferramenta Axios os conteúdos externos ao escopo da DFDS possuem links que direcionam para suas respectivas explicações:
-
-![Screenshot](../imagens/img (122).png)
-
-![Screenshot](../imagens/img (123).png)
-
-![Screenshot](../imagens/img (124).png)
+Na documentação da ferramenta scikit-learn os conteúdos externos ao escopo da DFDS possuem links que direcionam para suas respectivas explicações.
 
 **Exemplo de aplicação ruim:**  
-As documentações de exemplo não possuem exemplos de falta de completude relacionado aos links externos. Usando o exemplo anterior, a incompletude poderia ser não adicionar link para “XMLHttpRequest” ou para http no node.js.
+As documentações de exemplo não possuem exemplos de falta de completude relacionado aos links externos. Usando o exemplo anterior, a incompletude poderia ser não adicionar link para “FUN platform”.
 
 **Verificação:**  
 Todas as seções na documentação que possuem conteúdos relacionados à ferramenta que necessitam de explicação extra que fuja do escopo da DFDS possuem links externos para essa explicação.
@@ -92,19 +86,19 @@ Todas as referências e links externos explicitam quais conceitos são referenci
 
 ### Atributos de Apresentação
 
-#### 10.5 Boa legibilidade
-As referências e links externos são considerados com boa legibilidade quando o texto que possui o link está bem escrito (fácil de entender) e não possui erros gramaticais.
+#### 10.5 Legibilidade
+As referências e links externos são considerados com boa legibilidade quando o texto que possui o link está bem escrito (utiliza fontes claras, parágrafos curtos, frases diretas e bom contraste) e não possui erros gramaticais.
 
 **Consequências:**  
 Quando as referências e links externos não estão com boa legibilidade, há dificuldade no entendimento de qual conteúdo será explicado no link devido a dificuldade de leitura dele.
 
 **Exemplo de boa aplicação:**  
-Na documentação da ferramenta Axios os links externos estão bem escritos e não apresentam erros gramaticais.
+Na documentação da ferramenta scikit-learn os links externos estão bem escritos e não apresentam erros gramaticais.
 
 **Exemplo de aplicação ruim:**  
-As documentações de exemplo não apresentam legibilidade ruim nos links externos. Na documentação da ferramenta Axios, um caso de legibilidade ruim poderia ser:
+As documentações de exemplo não apresentam legibilidade ruim nos links externos. Na documentação da ferramenta scikit-learn, um caso de legibilidade ruim poderia ser:
 
-![Screenshot](../imagens/img (125).png)
+![Screenshot](../imagens/img (138).png)
 
 **Verificação:**  
 Todos os trechos das referências e links externos possuem texto bem escrito e não apresentam erros gramaticais em seu texto.
@@ -112,24 +106,24 @@ Todos os trechos das referências e links externos possuem texto bem escrito e n
 ---
 
 #### 10.6 Clareza
-As referências e links externos são considerados claros quando fica explícito que o texto apresentado é uma referência para um conteúdo fora do DFDS.
+As referências e links externos são considerados claros quando fica explícito que o texto apresentado é uma referência para um conteúdo fora da DFDS.
 
 **Consequências:**  
 Quando as referências e links externos não estão claros, há dificuldade de navegação na DFDS devido à dificuldade de identificar que há um link externo presente no texto.
 
 **Exemplo de boa aplicação:**  
-Na documentação da ferramenta Axios os links externos estão todos em formatação de link.
+Na documentação da ferramenta scikit-learn os links externos estão todos em formatação de link.
 
 **Exemplo de aplicação ruim:**  
-As documentações de exemplo não apresentam problema de clareza nos links externos. Usando a documentação da ferramenta Axios como exemplo poderíamos ter como falta de clareza o caso da formatação dos links externos serem iguais a do restante do texto.
+As documentações de exemplo não apresentam problema de clareza nos links externos. Usando a documentação da ferramenta scikit-learn como exemplo poderíamos ter como falta de clareza o caso da formatação dos links externos serem iguais a do restante do texto.
 
 **Verificação:**  
 Todas as referências e links externos possuem formatação de link.
 
 ---
 
-#### 10.7 Estrutura organizada
-As referências e links são considerados organizados estruturalmente quando a formatação de link utilizada é a mesma para todos os links.
+#### 10.7 Organização da estrutura
+As referências e links externos são considerados organizados estruturalmente quando a formatação de link utilizada é a mesma para todos os links.
 
 **Consequências:**  
 Ver consequências em 9.7

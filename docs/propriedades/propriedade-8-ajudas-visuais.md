@@ -1,6 +1,6 @@
 # 8- Propriedade: Ajudas visuais
 
-Propriedade de apresentação e estrutura. Utilização de diagramas, imagens, animações, entre outros, na explicação de workflows e conceitos complexos e exemplificação de resultados esperados.
+Utilização de diagramas, imagens, animações, entre outros, na explicação de workflows e conceitos complexos e exemplificação de resultados esperados.
 
 ## Pré-Condições
 Essa propriedade só é aplicável quando se tem algum workflow ou conceito cujo uso de ajudas visuais facilitaria o entendimento necessário para o uso da ferramenta
@@ -13,7 +13,7 @@ quando o uso da ferramenta compreende alterações de interface cujo uso de prin
 ### Atributos de Conteúdo
 
 #### 8.1 Completude
-A ajuda visual é considerada completa quando todos os conteúdos que se beneficiam de ajudas visuais possuem esses elementos (e.g. diagramas, imagens, animações).
+A ajuda visual é considerada completa quando todos os conteúdos que se beneficiam de ajudas visuais (ver pré-condições) possuem esses elementos (e.g. diagramas, imagens, animações).
 
 **Consequências:**  
 Quando a ajuda visual não está completa, há falta de entendimento sobre um conteúdo mais complexo da ferramenta devido à falta de informações.
@@ -31,7 +31,7 @@ Na documentação da ferramenta PIL, por se tratar de uma biblioteca de manipula
 As documentações de exemplo não possuem ajudas visuais incompletas. Usando a documentação da ferramenta PIL como exemplo, caso não fosse usada nenhuma imagem de exemplo para demonstrar as funcionalidades, seria um caso de incompletude
 
 **Verificação:**  
-Todos os conteúdos que se beneficiam de ajudas visuais possuem pelo menos um elemento de ajuda visual.
+Todos os conteúdos que se beneficiam de ajudas visuais (ver Pré-condições) possuem pelo menos um elemento de ajuda visual.
 
 ---
 
@@ -50,7 +50,7 @@ Na documentação da ferramenta PIL as ajudas visuais utilizadas representam cor
 As documentações de exemplo não apresentam incorreção de ajudas visuais. Usando o exemplo acima, caso a primeira e última imagens fossem trocadas, seria um caso de incorreção.
 
 **Verificação:**  
-Todos os elementos de ajuda visual utilizados representam o conteúdo correto.
+Todos os elementos de ajuda visual utilizados representam o conteúdo corretamente.
 
 ---
 
@@ -58,7 +58,7 @@ Todos os elementos de ajuda visual utilizados representam o conteúdo correto.
 A ajuda visual é considerada relevante quando os elementos de ajuda visual utilizados facilitam o entendimento do conteúdo sendo apoiado.
 
 **Consequências:**  
-Quando a ajuda visual não é relevante, há falta de entendimento sobre um conteúdo mais complexo da ferramenta devido à ajuda visual apresentada ser insuficiente para facilitar o entendimento do conteúdo.
+Quando a ajuda visual não é relevante, há falta de entendimento sobre um conteúdo mais complexo da ferramenta devido à ajuda visual apresentada ser insuficiente para facilitar o seu entendimento.
 
 **Exemplo de boa aplicação:**  
 Na documentação da ferramenta PIL a imagem utilizada nas ajudas visuais é relevante por ser uma imagem complexa, ou seja, com muitos elementos que facilitam a visualização das mudanças.
@@ -94,11 +94,11 @@ Todos os elementos de ajuda visual possuem alguma indicação que explicita que 
 
 ### Atributos de Apresentação
 
-#### 8.5 Boa legibilidade
-A ajuda visual da ferramenta é considerada com boa legibilidade quando o texto da legenda e, caso presente, o texto do elemento visual está bem escrito (fácil de entender) e não possui erros gramaticais.
+#### 8.5 Legibilidade
+A ajuda visual da ferramenta é considerada com boa legibilidade quando o texto da legenda e, caso presente, o texto do elemento visual está bem escrito (utiliza fontes claras, bom contraste, parágrafos curtos, frases diretas e voz ativa) e não possui erros gramaticais.
 
 **Consequências:**  
-Quando a ajuda visual não está com boa legibilidade, há dificuldade no entendimento sobre um conteúdo mais complexo da ferramenta devido a dificuldade de leitura da ajuda visual.
+Quando a ajuda visual não tem boa legibilidade, há dificuldade no entendimento sobre um conteúdo mais complexo da ferramenta devido a dificuldade de leitura da ajuda visual.
 
 **Exemplo de boa aplicação:**  
 Na documentação da ferramenta Matplotlib a seguinte imagem é utilizada para explicar os diferentes componentes de uma Figure da biblioteca. O texto presente nela está bem escrito e não apresenta erros de gramática:
@@ -109,7 +109,7 @@ Na documentação da ferramenta Matplotlib a seguinte imagem é utilizada para e
 As documentações de exemplo não apresentam casos de legibilidade ruim em ajudas visuais. Usando o exemplo anterior, seria o caso se existissem erros gramaticais no texto da imagem, como por exemplo, no título estar escrito “Anaomy of a igure” ao invés e “Anatomy of a figure”.
 
 **Verificação:**  
-Todo o texto presente nas ajudas visuais é bem escrito e não apresenta erros gramaticais.
+Todo o texto presente nas ajudas visuais está bem escrito e não apresenta erros gramaticais.
 
 ---
 
@@ -128,21 +128,21 @@ Na documentação da ferramenta Matplotlib as ajudas visuais estão localizadas 
 As documentações de exemplo não possuem falta de clareza nas ajudas visuais. Na documentação da ferramenta Matplotlib haveria falta de clareza caso as imagens ficassem todas no final da página ao invés de cada uma em sua seção, por exemplo.
 
 **Verificação:**  
-Todas as ajudas visuais estão localizadas na mesma seção que os conteúdos correspondentes e a legenda, quando presente, explicita o conteúdo.
+Todas as ajudas visuais estão localizadas na mesma seção que os conteúdos correspondentes e a legenda, quando presente, explicita o conteúdo ao qual ela se refere.
 
 ---
 
-#### 8.7 Estrutura organizada
+#### 8.7 Organização da estrutura
 A ajuda visual é considerada organizada estruturalmente quando o elemento de ajuda visual está localizado de modo que o entendimento do restante da seção não seja prejudicado.
 
 **Consequências:**  
-Quando a ajuda visual não está organizada estruturalmente, há dificuldade de navegação na DFDS devido à ajuda visual prejudicar o entendimento do texto em volta.
+Quando a ajuda visual não está organizada estruturalmente, há dificuldade de navegação na DFDS devido à ajuda visual prejudicar o entendimento do texto no seu entorno.
 
 **Exemplo de boa aplicação:**  
 Na documentação da ferramenta Matplotlib as ajudas visuais não interrompem o texto em volta e não prejudicam a formatação do restante da documentação.
 
 **Exemplo de aplicação ruim:**  
-As documentações de exemplo não possuem ajudas visuais em estrutura desorganizada. Em [4] seria o caso se as imagens fossem colocadas no meio dos parágrafos das seções de forma a prejudicar a formatação do texto.
+As documentações de exemplo não possuem ajudas visuais desorganizadas estruturalmente. Na documentação da ferramenta Matplotlib seria o caso se as imagens fossem colocadas no meio dos parágrafos das seções, prejudicando a formatação do texto.
 
 **Verificação:**  
 Todas as ajudas visuais estão estruturadas de modo que o restante da seção não possua seu entendimento e formatação prejudicados.

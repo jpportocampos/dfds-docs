@@ -1,6 +1,6 @@
 # 11- Propriedade: Integração com ferramentas de busca
 
-Propriedade de uso. Utilização de ferramentas de busca textual para facilitar a consulta de informações específicas na documentação.
+Utilização de ferramentas de busca textual para facilitar a consulta de informações específicas na documentação.
 
 ## Pré-Condições
 Essa propriedade só é aplicável se o meio de apresentação escolhido para a DFDS não possuir um mecanismo de busca funcional próprio.
@@ -19,7 +19,7 @@ Quando a integração de ferramentas de busca não está completa, há necessida
 Na documentação da ferramenta PIL a ferramenta de busca realiza as consultas comparando o texto da busca com o da documentação, garantindo que todo o conteúdo relevante será incluído na busca.
 
 **Exemplo de aplicação ruim:**  
-Na documentação da ferramenta Axios não foi adicionada uma ferramenta de busca na própria documentação, deixando a tarefa para a busca integrada no navegador de internet, limitando a busca para a página atual ao invés de toda a documentação.
+Caso na documentação da ferramenta PIL não houvesse uma ferramenta de busca na própria documentação, deixando a tarefa para a busca integrada no navegador de internet, por exemplo, a busca seria limitada para a página atual ao invés de toda a documentação.
 
 **Verificação:**  
 Todo o conteúdo da DFDS pode ser consultado via ferramenta de busca.
@@ -55,8 +55,8 @@ A Contextualização não afeta essa funcionalidade.
 
 ### Atributos de Apresentação
 
-#### 11.5 Boa legibilidade
-A Boa legibilidade não afeta essa propriedade.
+#### 11.5 Legibilidade
+A Legibilidade não afeta essa propriedade.
 
 ---
 
@@ -77,7 +77,7 @@ A ferramenta de busca é visível por todo o tempo de acesso à documentação.
 
 ---
 
-#### 11.7 Estrutura organizada
+#### 11.7 Organização da estrutura
 A integração de ferramentas de busca é considerada organizada estruturalmente quando o padrão visual adotado deixa explícito ao desenvolvedor que ali se encontra uma ferramenta de busca.
 
 **Consequências:**  

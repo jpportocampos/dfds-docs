@@ -1,6 +1,6 @@
 # 5- Propriedade: Estrutura linear
 
-Propriedade de apresentação e estrutura. O conteúdo é descrito em uma ordem de leitura específica, organizada em tópicos ordenados.
+O conteúdo é descrito em uma ordem de leitura específica, organizada em tópicos ordenados.
 
 ## Pré-Condições
 Essa propriedade só é aplicável quando o conteúdo a ser documentado pode ser organizado em uma ordem de leitura específica.
@@ -19,7 +19,7 @@ A estrutura linear da DFDS é considerada completa quando todas as seções da D
 Ver Consequências em 4.1
 
 **Exemplo de boa aplicação:**  
-Na documentação da ferramenta Axios, as seções possuem uma ordem de leitura bem definida.
+Na documentação da ferramenta scikit-learn, as seções possuem uma ordem de leitura bem definida.
 
 **Exemplo de aplicação ruim:**  
 Na documentação da ferramenta PIL, as seções não possuem ordem de leitura definida.
@@ -36,13 +36,13 @@ A estrutura linear da DFDS é considerada correta quando as seções são organi
 Ver consequências em 4.2
 
 **Exemplo de boa aplicação:**  
-Na documentação da ferramenta Axios, as seções estão organizadas em tópicos de acordo com uma ordem pré definida de tópicos.
+Na documentação da ferramenta scikit-learn, as seções estão organizadas em tópicos de acordo com uma ordem pré definida de tópicos.
 
 **Exemplo de aplicação ruim:**  
 Na documentação da ferramenta Matplotlib, as seções não estão ordenadas e os tópicos estão espalhados sem uma organização pré definida.
 
 **Verificação:**  
-Nenhum conteúdo da DFDS é explicado da mesma forma em diferentes seções e as seções estão organizadas de acordo com uma ordem pré definida dos tópicos.
+Nenhum conteúdo da DFDS é explicado da mesma forma em diferentes seções.
 
 ---
 
@@ -53,10 +53,10 @@ A estrutura linear da ferramenta é considerada relevante quando as seções da 
 Ver consequências em 4.3
 
 **Exemplo de boa aplicação:**  
-Na documentação da ferramenta Axios, as seções estão ordenadas por complexidade de conteúdo.
+Na documentação da ferramenta scikit-learn, as seções estão ordenadas por complexidade de conteúdo.
 
 **Exemplo de aplicação ruim:**  
-As documentações de exemplo não possuem exemplo de falta de relevância ou não possuem suas seções ordenadas. Usando a documentação da ferramenta Axios como exemplo, caso as seções fossem ordenadas em ordem alfabética, haveria falta de relevância.
+As documentações de exemplo não possuem exemplo de falta de relevância ou não possuem suas seções ordenadas. Usando a documentação da ferramenta scikit-learn como exemplo, caso as seções fossem ordenadas em ordem alfabética, haveria falta de relevância.
 
 **Verificação:**  
 As seções da DFDS foram ordenadas de acordo com cenários reais de uso da ferramenta.
@@ -70,7 +70,7 @@ Verificar 4.4.
 
 ### Atributos de Apresentação
 
-#### 5.5 Boa legibilidade
+#### 5.5 Legibilidade
 Verificar 4.5
 
 ---
@@ -80,5 +80,5 @@ Verificar 4.6
 
 ---
 
-#### 5.7 Estrutura organizada
+#### 5.7 Organização da estrutura
 Verificar 4.7
