@@ -37,14 +37,10 @@ Quando as referências e links internos não estão corretos, há necessidade de
 **Exemplo de boa aplicação:**  
 Na documentação da ferramenta PIL ao selecionar o link em “See Colors” na primeira imagem, somos direcionados para a seção correspondente no módulo de “Concepts”, na segunda imagem:
 
-![Screenshot](../imagens/img (80).png)
-
 ![Screenshot](../imagens/img (81).png)
 
 **Exemplo de aplicação ruim:**  
 As documentações de exemplo não possuem exemplos de links internos incorretos. Usando o exemplo anterior, se ao clicarmos em “See Colors” fossemos direcionados para a seção “Color names”, seria uma incorreção:
-
-![Screenshot](../imagens/img (80).png)
 
 ![Screenshot](../imagens/img (82).png)
 
